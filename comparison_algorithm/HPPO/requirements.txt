@@ -1,0 +1,8 @@
+# 生成 requirements.txt 文件使用指令 pipreqs ./ --encoding=utf8 --force
+# 安装 requirements.txt 里面的包 使用指令 pip install -r requirements.txt
+matplotlib==3.2.2
+networkx==2.8.8
+numpy==1.22.4
+PyYAML==6.0.1
+tensorboardX==2.6.2.2
+torch==1.11.0+cu113
