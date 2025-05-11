@@ -1,0 +1,35 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-_e6fl52n because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app arp_handler.py
+loading app ryu.topology.switches
+loading app ryu.controller.ofp_handler
+instantiating app network_structure.py of NetworkStructure
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.topology.switches of Switches
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery: Exception occurred during handler processing. Backtrace from offending handler [switch_features_handler] servicing event [EventOFPSwitchFeatures] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 94, in switch_features_handler
+    self.logger.info("discovery---> AccessPoint: %s connected", datapath.__dict__())
+TypeError: 'dict' object is not callable
+discovery: Exception occurred during handler processing. Backtrace from offending handler [switch_features_handler] servicing event [EventOFPSwitchFeatures] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 94, in switch_features_handler
+    self.logger.info("discovery---> AccessPoint: %s connected", datapath.__dict__())
+TypeError: 'dict' object is not callable
+discovery: Exception occurred during handler processing. Backtrace from offending handler [switch_features_handler] servicing event [EventOFPSwitchFeatures] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 94, in switch_features_handler
+    self.logger.info("discovery---> AccessPoint: %s connected", datapath.__dict__())
+TypeError: 'dict' object is not callable
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846979, 1152921504606846977), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================

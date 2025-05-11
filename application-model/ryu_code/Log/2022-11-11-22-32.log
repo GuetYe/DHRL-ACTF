@@ -1,0 +1,68 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-qhs9vajn because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 3 connected
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 1000000000000006
+monitor---->register datapath: 1000000000000002
+monitor---->register datapath: 1000000000000003
+monitor---->register datapath: 1000000000000004
+monitor---->register datapath: 1000000000000005
+monitor---->register datapath: 1000000000000001
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-zc4k_8jb because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 3 connected
+discovery---> AccessPoint: 4 connected
+monitor---->register datapath: 1000000000000006
+monitor---->register datapath: 1000000000000004
+monitor---->register datapath: 1000000000000002
+monitor---->register datapath: 1000000000000005
+monitor---->register datapath: 1000000000000001
+monitor---->register datapath: 1000000000000003
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='6a:c1:ed:fa:6d:5e',name=b'ap6-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4,hw_addr='c6:80:e7:d8:b7:c0',name=b'ap2-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='92:23:85:00:aa:8d',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='e2:b7:dc:6f:e5:3e',name=b'ap5-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4,hw_addr='42:9c:ea:45:89:b8',name=b'ap4-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+shortest=====>[PATH] [192.168.0.2 <----> 192.168.0.1]: [2, 1]
+shortest=====>[PATH] [192.168.0.3 <----> 192.168.0.1]: [3, 2, 1]
+shortest=====>[PATH] [192.168.0.4 <----> 192.168.0.1]: [4, 5, 1]
+shortest=====>[PATH] [192.168.0.5 <----> 192.168.0.1]: [5, 1]
+shortest=====>[PATH] [192.168.0.6 <----> 192.168.0.1]: [6, 2, 1]

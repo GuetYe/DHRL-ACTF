@@ -1,0 +1,346 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-tcjhi3ig because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 1000000000000001
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4294967294,hw_addr='10:00:00:00:00:00',name=b'ap1',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=1,hw_addr='10:00:00:00:00:00',name=b'ap1-wlan1',config=0,state=4,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='02:23:cf:95:c7:a2',name=b'ap1-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='4e:5f:8b:b6:f1:4b',name=b'ap1-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+discovery---> AccessPoint: 2 connected
+monitor---->register datapath: 1000000000000002
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000003
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4,hw_addr='1e:51:ae:23:78:6f',name=b'ap3-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventPortModify] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=1,hw_addr='30:00:00:00:00:00',name=b'ap3-wlan1',config=0,state=4,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='0e:25:03:94:42:d0',name=b'ap3-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4294967294,hw_addr='30:00:00:00:00:00',name=b'ap3',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='92:23:85:00:aa:8d',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventPortModify] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventPortModify] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventPortModify] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventPortModify] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery---> AccessPoint: 4 connected
+monitor---->register datapath: 1000000000000004
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery---> AccessPoint: 5 connected
+monitor---->register datapath: 1000000000000005
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery---> AccessPoint: 6 connected
+monitor---->register datapath: 1000000000000006
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/network_shortest_path.py", line 105, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu_code/network_shortest_path.py", line 121, in calculate_shortest_paths
+    path = self.calculate_path(src_switch, dst_switch)
+  File "/home/terry/LJQ/Task/ryu_code/network_shortest_path.py", line 165, in calculate_path
+    self.network_structure.calculate_shortest_paths(src_dpid, dst_dpid, setting.WEIGHT)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 238, in calculate_shortest_paths
+    weight=weight, method=setting.METHOD)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/generic.py", line 162, in shortest_path
+    paths = nx.dijkstra_path(G, source, target, weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 157, in dijkstra_path
+    (length, path) = single_source_dijkstra(G, source, target=target, weight=weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 465, in single_source_dijkstra
+    G, {source}, cutoff=cutoff, target=target, weight=weight
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 723, in multi_source_dijkstra
+    G, sources, weight, paths=paths, cutoff=cutoff, target=target
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 810, in _dijkstra_multisource
+    raise nx.NodeNotFound(f"Source {source} not in G")
+networkx.exception.NodeNotFound: Source 1 not in G
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/Task/ryu_code/network_monitor.py", line 66, in scheduler
+    self.create_bandwidth_graph()
+  File "/home/terry/LJQ/Task/ryu_code/network_monitor.py", line 345, in create_bandwidth_graph
+    self.network_structure.cls[src_dpid][dst_dpid]['free_bw'] = 0
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/cls.py", line 465, in __getitem__
+    return self.adj[n]
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/coreviews.py", line 79, in __getitem__
+    return AtlasView(self._atlas[name])
+KeyError: 2
+
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 75, in scheduler
+    self.get_topology(None)
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 203, in get_topology
+    self.build_topology_between_switches()
+  File "/home/terry/LJQ/Task/ryu_code/network_structure.py", line 213, in build_topology_between_switches
+    _graph.add_edge(src_dpid, dst_dpid, free_bw=bw, delay=delay, loss=loss,
+NameError: name 'bw' is not defined
+

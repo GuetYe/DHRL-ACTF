@@ -1,0 +1,67 @@
+loading app network_structure.py
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> switch: 4 connected
+discovery---> switch: 2 connected
+discovery---> switch: 1 connected
+discovery---> switch: 5 connected
+discovery---> switch: 3 connected
+monitor---->register datapath: 0000000000000001
+monitor---->register datapath: 0000000000000004
+monitor---->register datapath: 0000000000000003
+monitor---->register datapath: 0000000000000005
+monitor---->register datapath: 0000000000000002
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(4, 5), (4, 1), (5, 3), (5, 2), (3, 1), (1, 2)]
+discovery--->==============================
+shortest=====>[PATH] [10.0.0.4 <----> 10.0.0.1]: [5, 3, 1]
+shortest=====>[PATH] [10.0.0.4 <----> 10.0.0.3]: [5, 3, 1]
+shortest=====>[PATH] [10.0.0.4 <----> 10.0.0.2]: [5, 3, 1]
+shortest=====>[PATH] [10.0.0.1 <----> 10.0.0.3]: [1]
+shortest=====>[PATH] [10.0.0.1 <----> 10.0.0.2]: [1]
+shortest=====>[PATH] [10.0.0.3 <----> 10.0.0.2]: [1]
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='72:86:6d:95:a0:51',name=b's5-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='8a:6d:b3:1d:9f:8e',name=b's5-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='3a:66:59:97:2a:03',name=b's2-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='1e:dd:02:18:6b:13',name=b's3-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='46:3c:5d:d2:06:ee',name=b's5-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=1,hw_addr='96:73:8e:d9:c5:4c',name=b's1-eth1',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='96:73:8e:d9:c5:4c',name=b's1-eth1',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='ee:16:e0:69:41:9e',name=b's2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='ee:16:e0:69:41:9e',name=b's2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='6a:55:a0:8e:70:88',name=b's1-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='56:b5:92:c6:81:05',name=b's3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='de:62:6b:5c:1a:57',name=b's4-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='da:b7:c8:12:66:d5',name=b's1-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='5e:1f:43:81:dc:66',name=b's4-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='96:84:18:f1:ed:aa',name=b's5-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='ba:9a:ce:16:49:5f',name=b's1-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=5,hw_addr='02:11:ec:8b:3c:b0',name=b's1-eth5',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=6,hw_addr='12:2f:fa:66:61:c3',name=b's1-eth6',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+monitor---> unreigster datapath: 0000000000000004
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_shortest_path.py", line 70, in super_schedule
+    self.network_delay.scheduler()
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_delay.py", line 50, in scheduler
+    self._send_echo_request()
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_delay.py", line 58, in _send_echo_request
+    for datapath in self.network_monitor.datapaths_table.values():
+RuntimeError: dictionary changed size during iteration
+
+monitor---> unreigster datapath: 0000000000000001
+monitor---> unreigster datapath: 0000000000000003
+monitor---> unreigster datapath: 0000000000000005
+monitor---> unreigster datapath: 0000000000000002

@@ -1,0 +1,146 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-7qucuxli because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app ryu.controller.ofp_handler
+loading app ryu.topology.switches
+loading app ryu.controller.ofp_handler
+instantiating app network_structure.py of NetworkStructure
+instantiating app ryu.controller.ofp_handler of OFPHandler
+instantiating app ryu.topology.switches of Switches
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 3 connected
+discovery---> AccessPoint: 4 connected
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 133, in _packet_in_handler
+    self.storage_access_info(self.ap_id1.index(datapath.id) + 1, in_port, arp_src_ip, src_mac)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 138, in storage_access_info
+    if in_port in self.not_use_ports[dpid]:
+KeyError: 2
+discovery: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 133, in _packet_in_handler
+    self.storage_access_info(self.ap_id1.index(datapath.id) + 1, in_port, arp_src_ip, src_mac)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 138, in storage_access_info
+    if in_port in self.not_use_ports[dpid]:
+KeyError: 2
+discovery: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 133, in _packet_in_handler
+    self.storage_access_info(self.ap_id1.index(datapath.id) + 1, in_port, arp_src_ip, src_mac)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 138, in storage_access_info
+    if in_port in self.not_use_ports[dpid]:
+KeyError: 2
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 133, in _packet_in_handler
+    self.storage_access_info(self.ap_id1.index(datapath.id) + 1, in_port, arp_src_ip, src_mac)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 138, in storage_access_info
+    if in_port in self.not_use_ports[dpid]:
+KeyError: 2
+discovery: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 133, in _packet_in_handler
+    self.storage_access_info(self.ap_id1.index(datapath.id) + 1, in_port, arp_src_ip, src_mac)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 138, in storage_access_info
+    if in_port in self.not_use_ports[dpid]:
+KeyError: 2
+discovery: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 133, in _packet_in_handler
+    self.storage_access_info(self.ap_id1.index(datapath.id) + 1, in_port, arp_src_ip, src_mac)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 138, in storage_access_info
+    if in_port in self.not_use_ports[dpid]:
+KeyError: 2
+discovery: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 133, in _packet_in_handler
+    self.storage_access_info(self.ap_id1.index(datapath.id) + 1, in_port, arp_src_ip, src_mac)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 138, in storage_access_info
+    if in_port in self.not_use_ports[dpid]:
+KeyError: 2
+discovery: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 133, in _packet_in_handler
+    self.storage_access_info(self.ap_id1.index(datapath.id) + 1, in_port, arp_src_ip, src_mac)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 138, in storage_access_info
+    if in_port in self.not_use_ports[dpid]:
+KeyError: 2
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 133, in _packet_in_handler
+    self.storage_access_info(self.ap_id1.index(datapath.id) + 1, in_port, arp_src_ip, src_mac)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 138, in storage_access_info
+    if in_port in self.not_use_ports[dpid]:
+KeyError: 2
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846980, 1152921504606846979), (1152921504606846979, 1152921504606846978), (1152921504606846977, 1152921504606846978)]
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================

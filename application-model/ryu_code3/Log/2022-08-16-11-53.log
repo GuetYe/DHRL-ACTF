@@ -1,0 +1,27 @@
+loading app network_structure.py
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> switch: 4 connected
+monitor---->register datapath: 0000000000000004
+discovery---> switch: 5 connected
+discovery---> switch: 1 connected
+discovery---> switch: 2 connected
+discovery---> switch: 3 connected
+monitor---->register datapath: 0000000000000001
+monitor---->register datapath: 0000000000000005
+monitor---->register datapath: 0000000000000002
+monitor---->register datapath: 0000000000000003
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(4, 5), (4, 1), (5, 3), (5, 2), (1, 2), (1, 3)]
+discovery--->==============================

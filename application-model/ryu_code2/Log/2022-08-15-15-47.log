@@ -1,0 +1,50 @@
+loading app network_structure.py
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> switch: 4 connected
+discovery---> switch: 2 connected
+discovery---> switch: 1 connected
+discovery---> switch: 5 connected
+discovery---> switch: 3 connected
+monitor---->register datapath: 0000000000000004
+monitor---->register datapath: 0000000000000002
+monitor---->register datapath: 0000000000000001
+monitor---->register datapath: 0000000000000003
+monitor---->register datapath: 0000000000000005
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(2, 5), (2, 1), (5, 4), (5, 3), (1, 4), (1, 3)]
+discovery--->==============================
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='1a:7f:b6:e9:00:f7',name=b's5-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='c6:c8:11:07:84:b0',name=b's5-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='46:1d:f0:96:e2:de',name=b's2-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='46:de:f9:aa:88:fb',name=b's3-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='9a:7b:b3:c6:c2:07',name=b's5-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='fa:b4:5a:64:4e:5d',name=b's1-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='f2:ff:9d:06:8b:4f',name=b's2-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='e6:3b:b3:56:6f:37',name=b's1-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='9a:b8:c1:d6:fc:62',name=b's3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=1,hw_addr='fe:df:b4:b5:95:b3',name=b's4-eth1',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='fe:df:b4:b5:95:b3',name=b's4-eth1',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='e2:fb:98:cb:7d:8a',name=b's1-eth3',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='e2:fb:98:cb:7d:8a',name=b's1-eth3',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='82:9c:63:df:cf:03',name=b's4-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='52:9c:6f:43:9c:8b',name=b's5-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='36:e0:11:76:42:88',name=b's1-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=5,hw_addr='16:36:2d:6b:9f:60',name=b's1-eth5',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=6,hw_addr='ae:02:c2:50:cb:09',name=b's1-eth6',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+monitor---> unreigster datapath: 0000000000000004
+monitor---> unreigster datapath: 0000000000000001
+monitor---> unreigster datapath: 0000000000000003
+monitor---> unreigster datapath: 0000000000000005
+monitor---> unreigster datapath: 0000000000000002

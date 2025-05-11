@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<links_info>
+	<links>(25, 27)<ports>(1, 1)</ports>
+		<bw>7</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>30.0</distance>
+	</links>
+	<links>(25, 28)<ports>(2, 1)</ports>
+		<bw>23</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>70.0</distance>
+	</links>
+	<links>(25, 29)<ports>(3, 1)</ports>
+		<bw>29</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>76.16</distance>
+	</links>
+	<links>(25, 33)<ports>(4, 1)</ports>
+		<bw>27</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>20.0</distance>
+	</links>
+	<links>(26, 27)<ports>(1, 2)</ports>
+		<bw>13</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>42.43</distance>
+	</links>
+	<links>(26, 28)<ports>(2, 2)</ports>
+		<bw>40</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>116.62</distance>
+	</links>
+	<links>(26, 35)<ports>(3, 1)</ports>
+		<bw>17</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>114.02</distance>
+	</links>
+	<links>(28, 30)<ports>(3, 1)</ports>
+		<bw>6</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>104.4</distance>
+	</links>
+	<links>(28, 37)<ports>(4, 1)</ports>
+		<bw>38</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>10.0</distance>
+	</links>
+	<links>(29, 31)<ports>(2, 1)</ports>
+		<bw>39</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>40.0</distance>
+	</links>
+	<links>(29, 32)<ports>(3, 1)</ports>
+		<bw>35</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>56.57</distance>
+	</links>
+	<links>(31, 32)<ports>(2, 2)</ports>
+		<bw>36</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>40.0</distance>
+	</links>
+	<links>(31, 39)<ports>(3, 1)</ports>
+		<bw>28</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>76.16</distance>
+	</links>
+	<links>(31, 40)<ports>(4, 1)</ports>
+		<bw>26</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>130.0</distance>
+	</links>
+	<links>(32, 38)<ports>(3, 1)</ports>
+		<bw>12</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>70.0</distance>
+	</links>
+	<links>(32, 39)<ports>(4, 2)</ports>
+		<bw>31</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>42.43</distance>
+	</links>
+	<links>(33, 34)<ports>(2, 1)</ports>
+		<bw>14</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>202.24</distance>
+	</links>
+	<links>(34, 40)<ports>(2, 2)</ports>
+		<bw>27</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>20.0</distance>
+	</links>
+	<links>(35, 37)<ports>(2, 2)</ports>
+		<bw>35</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>30.0</distance>
+	</links>
+	<links>(36, 37)<ports>(1, 3)</ports>
+		<bw>32</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>20.0</distance>
+	</links>
+	<links>(36, 38)<ports>(2, 2)</ports>
+		<bw>23</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>111.8</distance>
+	</links>
+	<links>(38, 41)<ports>(3, 1)</ports>
+		<bw>34</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>30.0</distance>
+	</links>
+	<links>(39, 43)<ports>(3, 1)</ports>
+		<bw>10</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>72.8</distance>
+	</links>
+	<links>(39, 44)<ports>(4, 1)</ports>
+		<bw>33</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>36.06</distance>
+	</links>
+	<links>(40, 42)<ports>(3, 1)</ports>
+		<bw>21</bw>
+		<delay>1ms</delay>
+		<loss>1</loss>
+		<distance>104.4</distance>
+	</links>
+	<links>(41, 43)<ports>(2, 2)</ports>
+		<bw>24</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>36.06</distance>
+	</links>
+	<links>(42, 44)<ports>(2, 2)</ports>
+		<bw>11</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>72.8</distance>
+	</links>
+	<links>(43, 45)<ports>(3, 1)</ports>
+		<bw>32</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>133.42</distance>
+	</links>
+	<links>(44, 45)<ports>(3, 2)</ports>
+		<bw>15</bw>
+		<delay>1ms</delay>
+		<loss>0</loss>
+		<distance>172.63</distance>
+	</links>
+</links_info>

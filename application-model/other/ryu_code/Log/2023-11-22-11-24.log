@@ -1,0 +1,293 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-43ey66nq because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+hub: uncaught exception: Traceback (most recent call last):
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 52, in save_weight
+    self.create_file()  # 创建文件
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 103, in create_file
+    os.mkdir(txt_path)
+FileNotFoundError: [Errno 2] 没有那个文件或目录: '/home/terry/LJQ/rerouting-drl/application-model/ryu_code/weight'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 115, in super_schedule
+    self.save_weight()  # 保存数据
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 65, in save_weight
+    print("the file is None")
+OSError: [Errno 5] 输入/输出错误
+
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 1000000000000002
+discovery---> AccessPoint: 2 connected
+monitor---->register datapath: 1000000000000004
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000006
+discovery---> AccessPoint: 4 connected
+monitor---->register datapath: 1000000000000007
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_delay.py", line 46, in scheduler
+    self._send_echo_request()
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_delay.py", line 55, in _send_echo_request
+    for datapath in self.network_monitor.datapaths_table.values():
+RuntimeError: dictionary changed size during iteration
+
+discovery---> AccessPoint: 5 connected
+monitor---->register datapath: 1000000000000008
+discovery---> AccessPoint: 6 connected
+monitor---->register datapath: 1000000000000009
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_monitor.py", line 66, in scheduler
+    self.create_bandwidth_graph()
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_monitor.py", line 340, in create_bandwidth_graph
+    capacity = self.network_structure.m_graph[src_dpid][dst_dpid]['free_bw']
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/coreviews.py", line 51, in __getitem__
+    return self._atlas[key]
+KeyError: 3
+
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code1/network_shortest_path.py", line 136, in _packet_in_handler
+    print("shortest--->=====> IPv4 processing")
+OSError: [Errno 5] 输入/输出错误
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='a2:f8:b3:fe:84:5e',name=b'ap4-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='a2:f8:b3:fe:84:5e',name=b'ap4-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='52:e4:27:06:47:9d',name=b'ap2-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='a6:bb:04:49:bc:c5',name=b'ap7-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='e6:f0:ac:c5:0d:50',name=b'ap6-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='36:ba:af:8b:f7:ee',name=b'ap9-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='ee:98:ab:99:db:3e',name=b'ap8-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='b2:14:ae:fd:23:69',name=b'ap2-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='56:68:d2:15:a8:36',name=b'ap4-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='3e:0c:e5:92:c2:a7',name=b'ap8-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='ca:47:be:ca:36:5a',name=b'ap7-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='56:fc:7a:99:c9:db',name=b'ap9-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='82:ec:f3:7d:97:e1',name=b'ap9-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='4a:f4:36:33:8d:b3',name=b'ap6-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='b6:03:78:6a:0c:5b',name=b'ap7-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='fa:78:4c:69:65:19',name=b'ap8-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)

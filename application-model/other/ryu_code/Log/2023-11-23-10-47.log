@@ -1,0 +1,33 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-r3nfzzxw because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 1000000000000001
+discovery---> AccessPoint: 2 connected
+monitor---->register datapath: 1000000000000002
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000003
+Intelligent Routing:[1, 2]
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='02:94:2a:f1:65:4a',name=b'ap2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='00:00:00:00:00:00',name=b'ap2-eth2',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='72:03:43:f3:d7:ad',name=b'ap1-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='72:03:43:f3:d7:ad',name=b'ap1-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='1e:51:ae:23:78:6f',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='12:f4:6b:ac:de:f7',name=b'ap1-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='00:00:00:00:00:00',name=b'ap2-eth2',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='da:35:08:0c:b1:6d',name=b'ap3-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='ee:3f:46:c3:6a:28',name=b'ap2-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)

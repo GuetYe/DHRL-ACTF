@@ -1,0 +1,63 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-hik77s3v because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 11 connected
+monitor---->register datapath: 100000000000000c
+discovery---> AccessPoint: 12 connected
+monitor---->register datapath: 100000000000000d
+discovery---> AccessPoint: 13 connected
+monitor---->register datapath: 1000000000000012
+discovery---> AccessPoint: 14 connected
+monitor---->register datapath: 1000000000000013
+discovery---> AccessPoint: 15 connected
+monitor---->register datapath: 1000000000000015
+discovery---> AccessPoint: 16 connected
+monitor---->register datapath: 1000000000000016
+discovery---> AccessPoint: 17 connected
+monitor---->register datapath: 1000000000000018
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code2/network_monitor.py", line 66, in scheduler
+    self.create_bandwidth_graph()
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code2/network_monitor.py", line 340, in create_bandwidth_graph
+    capacity = self.network_structure.m_graph[src_dpid][dst_dpid]['free_bw']
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/coreviews.py", line 51, in __getitem__
+    return self._atlas[key]
+KeyError: 13
+
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='82:ec:f3:7d:97:e1',name=b'ap13-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='02:64:ce:24:c2:05',name=b'ap21-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='7e:69:ab:43:aa:b0',name=b'ap12-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='fa:de:a7:a3:92:73',name=b'ap12-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='ea:a7:b4:62:a8:fe',name=b'ap12-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='d6:57:be:9d:54:06',name=b'ap13-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='9e:c2:f3:8b:40:a5',name=b'ap21-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='aa:f5:da:4a:af:b3',name=b'ap19-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='4e:e3:54:25:d3:7d',name=b'ap18-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='d2:cf:0f:4b:f0:a7',name=b'ap18-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='86:b8:bd:a1:3c:06',name=b'ap18-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=5,hw_addr='1a:f5:24:e0:37:86',name=b'ap19-eth5',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='e2:89:9b:d6:14:f6',name=b'ap19-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='7a:fd:33:60:33:6e',name=b'ap19-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='f6:69:7f:59:2f:2c',name=b'ap24-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=6,hw_addr='ce:6e:a9:63:e3:44',name=b'ap19-eth6',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='3a:58:74:16:8a:1b',name=b'ap21-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='02:33:15:4f:6a:d1',name=b'ap24-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='b2:18:fc:c1:b7:28',name=b'ap24-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='9e:8e:85:94:4e:83',name=b'ap22-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='a2:47:64:81:4a:46',name=b'ap22-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)

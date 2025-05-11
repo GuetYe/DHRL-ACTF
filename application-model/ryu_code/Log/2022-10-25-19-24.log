@@ -1,0 +1,508 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-dkv66msg because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+discovery---> switch: 1152921504606846977 connected
+monitor---->register datapath: 1000000000000001
+discovery---> switch: 1152921504606846978 connected
+monitor---->register datapath: 1000000000000002
+discovery---> switch: 1152921504606846979 connected
+monitor---->register datapath: 1000000000000003
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='4a:f6:88:18:a0:0c',name=b'ap1-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='8a:b6:71:4e:9f:dd',name=b'ap2-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='86:a6:0f:8f:ec:7b',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='96:fb:4f:5f:ab:a7',name=b'ap1-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000001        1        0        0        0        3      234        0
+1000000000000001        2       16     1863        0       18     2030        0
+1000000000000001        3       15     1753        0       13     1299        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000003        1        0        0        0        2      156        0
+1000000000000003        2       13     1299        0       15     1753        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000002        1        0        0        0        3      234        0
+1000000000000002        2       18     2030        0       16     1863        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.9344558715820312
+1152921504606846977 <---> 1152921504606846978 : 2.853870391845703
+1152921504606846977 <---> 1152921504606846979 : 2.09808349609375
+1152921504606846979 <---> 1152921504606846977 : 3.008127212524414
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.5838146209716797
+1152921504606846977 <---> 1152921504606846978 : 2.1626949310302734
+1152921504606846977 <---> 1152921504606846979 : 2.4335384368896484
+1152921504606846979 <---> 1152921504606846977 : 3.01361083984375
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 59, in scheduler
+    self.create_bandwidth_graph()
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 316, in create_bandwidth_graph
+    capacity = self.network_structure.m_graph[src_dpid][dst_dpid]['bw']
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/cls.py", line 465, in __getitem__
+    return self.adj[n]
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/coreviews.py", line 79, in __getitem__
+    return AtlasView(self._atlas[name])
+KeyError: 1152921504606846978
+
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000001        1        0        0        0        8      624        0
+1000000000000001        2       27     2919        0       27     2919        0
+1000000000000001        3       27     2919        0       28     2979        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000003        1        0        0        0        8      624        0
+1000000000000003        2       28     2979        0       27     2919        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000002        1        0        0        0        8      624        0
+1000000000000002        2       27     2919        0       27     2919        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.8448104858398438
+1152921504606846977 <---> 1152921504606846978 : 1.531362533569336
+1152921504606846977 <---> 1152921504606846979 : 1.8177032470703125
+1152921504606846979 <---> 1152921504606846977 : 1.6314983367919922
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.0623207092285156
+1152921504606846977 <---> 1152921504606846978 : 2.3458003997802734
+1152921504606846977 <---> 1152921504606846979 : 1.8651485443115234
+1152921504606846979 <---> 1152921504606846977 : 2.7446746826171875
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.020597457885742
+1152921504606846977 <---> 1152921504606846978 : 3.304719924926758
+1152921504606846977 <---> 1152921504606846979 : 2.9289722442626953
+1152921504606846979 <---> 1152921504606846977 : 2.140522003173828
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.926349639892578
+1152921504606846977 <---> 1152921504606846978 : 2.72369384765625
+1152921504606846977 <---> 1152921504606846979 : 1.5304088592529297
+1152921504606846979 <---> 1152921504606846977 : 2.480745315551758
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.745462417602539
+1152921504606846977 <---> 1152921504606846978 : 2.215147018432617
+1152921504606846977 <---> 1152921504606846979 : 2.112865447998047
+1152921504606846979 <---> 1152921504606846977 : 1.619100570678711
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.8853416442871094
+1152921504606846977 <---> 1152921504606846978 : 1.459360122680664
+1152921504606846977 <---> 1152921504606846979 : 2.878904342651367
+1152921504606846979 <---> 1152921504606846977 : 2.465963363647461
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.9077529907226562
+1152921504606846977 <---> 1152921504606846978 : 2.770662307739258
+1152921504606846977 <---> 1152921504606846979 : 2.7370452880859375
+1152921504606846979 <---> 1152921504606846977 : 1.5752315521240234
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 3.098726272583008
+1152921504606846977 <---> 1152921504606846978 : 2.8524398803710938
+1152921504606846977 <---> 1152921504606846979 : 2.918720245361328
+1152921504606846979 <---> 1152921504606846977 : 3.0384063720703125
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.9848346710205078
+1152921504606846977 <---> 1152921504606846978 : 3.0128955841064453
+1152921504606846977 <---> 1152921504606846979 : 1.6088485717773438
+1152921504606846979 <---> 1152921504606846977 : 2.1173954010009766
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.415895462036133
+1152921504606846977 <---> 1152921504606846978 : 1.5676021575927734
+1152921504606846977 <---> 1152921504606846979 : 2.0775794982910156
+1152921504606846979 <---> 1152921504606846977 : 1.9221305847167969
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.5950202941894531
+1152921504606846977 <---> 1152921504606846978 : 2.677440643310547
+1152921504606846977 <---> 1152921504606846979 : 2.008676528930664
+1152921504606846979 <---> 1152921504606846977 : 3.0596256256103516
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.5912055969238281
+1152921504606846977 <---> 1152921504606846978 : 3.0078887939453125
+1152921504606846977 <---> 1152921504606846979 : 1.546621322631836
+1152921504606846979 <---> 1152921504606846977 : 2.973318099975586
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.117633819580078
+1152921504606846977 <---> 1152921504606846978 : 1.9485950469970703
+1152921504606846977 <---> 1152921504606846979 : 2.115488052368164
+1152921504606846979 <---> 1152921504606846977 : 3.114461898803711
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.2972354888916016
+1152921504606846977 <---> 1152921504606846978 : 2.6900768280029297
+1152921504606846977 <---> 1152921504606846979 : 2.0246505737304688
+1152921504606846979 <---> 1152921504606846977 : 1.2710094451904297
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.8393993377685547
+1152921504606846977 <---> 1152921504606846978 : 2.3119449615478516
+1152921504606846977 <---> 1152921504606846979 : 2.4633407592773438
+1152921504606846979 <---> 1152921504606846977 : 2.270936965942383
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.8960704803466797
+1152921504606846977 <---> 1152921504606846978 : 1.5876293182373047
+1152921504606846977 <---> 1152921504606846979 : 2.8531551361083984
+1152921504606846979 <---> 1152921504606846977 : 3.112316131591797
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.953125
+1152921504606846977 <---> 1152921504606846978 : 2.8276443481445312
+1152921504606846977 <---> 1152921504606846979 : 2.1533966064453125
+1152921504606846979 <---> 1152921504606846977 : 2.216339111328125
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.02178955078125
+1152921504606846977 <---> 1152921504606846978 : 2.760171890258789
+1152921504606846977 <---> 1152921504606846979 : 0.9737014770507812
+1152921504606846979 <---> 1152921504606846977 : 2.049684524536133
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.5859603881835938
+1152921504606846977 <---> 1152921504606846978 : 2.871990203857422
+1152921504606846977 <---> 1152921504606846979 : 3.0090808868408203
+1152921504606846979 <---> 1152921504606846977 : 1.2860298156738281
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.018451690673828
+1152921504606846977 <---> 1152921504606846978 : 2.3844242095947266
+1152921504606846977 <---> 1152921504606846979 : 2.027750015258789
+1152921504606846979 <---> 1152921504606846977 : 3.019094467163086
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.9184818267822266
+1152921504606846977 <---> 1152921504606846978 : 2.9754638671875
+1152921504606846977 <---> 1152921504606846979 : 1.6853809356689453
+1152921504606846979 <---> 1152921504606846977 : 1.4996528625488281
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.5575885772705078
+1152921504606846977 <---> 1152921504606846978 : 1.5676021575927734
+1152921504606846977 <---> 1152921504606846979 : 2.5691986083984375
+1152921504606846979 <---> 1152921504606846977 : 3.0269622802734375
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.7391910552978516
+1152921504606846977 <---> 1152921504606846978 : 1.5475749969482422
+1152921504606846977 <---> 1152921504606846979 : 2.887725830078125
+1152921504606846979 <---> 1152921504606846977 : 1.5950202941894531
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 99, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 113, in calculate_shortest_paths
+    path = self.calculate_path(src_switch, dst_switch)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 157, in calculate_path
+    self.network_structure.calculate_shortest_paths(src_dpid, dst_dpid, self.network_structure.calculate_weight)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 225, in calculate_shortest_paths
+    weight=weight, method=setting.METHOD)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/generic.py", line 162, in shortest_path
+    paths = nx.dijkstra_path(G, source, target, weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 157, in dijkstra_path
+    (length, path) = single_source_dijkstra(G, source, target=target, weight=weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 465, in single_source_dijkstra
+    G, {source}, cutoff=cutoff, target=target, weight=weight
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 723, in multi_source_dijkstra
+    G, sources, weight, paths=paths, cutoff=cutoff, target=target
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 831, in _dijkstra_multisource
+    raise ValueError("Contradictory paths found:", "negative weights?")
+ValueError: ('Contradictory paths found:', 'negative weights?')
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.574920654296875
+1152921504606846977 <---> 1152921504606846978 : 1.955270767211914
+1152921504606846977 <---> 1152921504606846979 : 1.619577407836914
+1152921504606846979 <---> 1152921504606846977 : 1.6937255859375
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.6481876373291016
+1152921504606846977 <---> 1152921504606846978 : 2.9447078704833984
+1152921504606846977 <---> 1152921504606846979 : 3.1545162200927734
+1152921504606846979 <---> 1152921504606846977 : 2.064228057861328
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.953052520751953
+1152921504606846977 <---> 1152921504606846978 : 1.0766983032226562
+1152921504606846977 <---> 1152921504606846979 : 3.0028820037841797
+1152921504606846979 <---> 1152921504606846977 : 2.736806869506836
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 3.270387649536133
+1152921504606846977 <---> 1152921504606846978 : 2.752065658569336
+1152921504606846977 <---> 1152921504606846979 : 1.621246337890625
+1152921504606846979 <---> 1152921504606846977 : 1.6837120056152344
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 99, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 113, in calculate_shortest_paths
+    path = self.calculate_path(src_switch, dst_switch)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 157, in calculate_path
+    self.network_structure.calculate_shortest_paths(src_dpid, dst_dpid, self.network_structure.calculate_weight)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 225, in calculate_shortest_paths
+    weight=weight, method=setting.METHOD)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/generic.py", line 162, in shortest_path
+    paths = nx.dijkstra_path(G, source, target, weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 157, in dijkstra_path
+    (length, path) = single_source_dijkstra(G, source, target=target, weight=weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 465, in single_source_dijkstra
+    G, {source}, cutoff=cutoff, target=target, weight=weight
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 723, in multi_source_dijkstra
+    G, sources, weight, paths=paths, cutoff=cutoff, target=target
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 831, in _dijkstra_multisource
+    raise ValueError("Contradictory paths found:", "negative weights?")
+ValueError: ('Contradictory paths found:', 'negative weights?')
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.9854774475097656
+1152921504606846977 <---> 1152921504606846978 : 2.782106399536133
+1152921504606846977 <---> 1152921504606846979 : 2.775430679321289
+1152921504606846979 <---> 1152921504606846977 : 1.6181468963623047
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.638174057006836
+1152921504606846977 <---> 1152921504606846978 : 1.8384456634521484
+1152921504606846977 <---> 1152921504606846979 : 2.4106502532958984
+1152921504606846979 <---> 1152921504606846977 : 1.2590885162353516
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.176046371459961
+1152921504606846977 <---> 1152921504606846978 : 1.1296272277832031
+1152921504606846977 <---> 1152921504606846979 : 5.051136016845703
+1152921504606846979 <---> 1152921504606846977 : 1.6045570373535156
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 3.0431747436523438
+1152921504606846977 <---> 1152921504606846978 : 2.7976036071777344
+1152921504606846977 <---> 1152921504606846979 : 3.0367374420166016
+1152921504606846979 <---> 1152921504606846977 : 3.003358840942383
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 99, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 113, in calculate_shortest_paths
+    path = self.calculate_path(src_switch, dst_switch)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 157, in calculate_path
+    self.network_structure.calculate_shortest_paths(src_dpid, dst_dpid, self.network_structure.calculate_weight)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 225, in calculate_shortest_paths
+    weight=weight, method=setting.METHOD)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/generic.py", line 162, in shortest_path
+    paths = nx.dijkstra_path(G, source, target, weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 157, in dijkstra_path
+    (length, path) = single_source_dijkstra(G, source, target=target, weight=weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 465, in single_source_dijkstra
+    G, {source}, cutoff=cutoff, target=target, weight=weight
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 723, in multi_source_dijkstra
+    G, sources, weight, paths=paths, cutoff=cutoff, target=target
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 831, in _dijkstra_multisource
+    raise ValueError("Contradictory paths found:", "negative weights?")
+ValueError: ('Contradictory paths found:', 'negative weights?')
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.9954910278320312
+1152921504606846977 <---> 1152921504606846978 : 3.0372142791748047
+1152921504606846977 <---> 1152921504606846979 : 1.6064643859863281
+1152921504606846979 <---> 1152921504606846977 : 1.5845298767089844
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 1.886129379272461
+1152921504606846977 <---> 1152921504606846978 : 2.9447078704833984
+1152921504606846977 <---> 1152921504606846979 : 1.6074180603027344
+1152921504606846979 <---> 1152921504606846977 : 2.674102783203125
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.952098846435547
+1152921504606846977 <---> 1152921504606846978 : 2.1584033966064453
+1152921504606846977 <---> 1152921504606846979 : 1.5873908996582031
+1152921504606846979 <---> 1152921504606846977 : 2.032041549682617

@@ -1,0 +1,68 @@
+loading app network_structure.py
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> switch: 4 connected
+discovery---> switch: 2 connected
+discovery---> switch: 1 connected
+discovery---> switch: 5 connected
+discovery---> switch: 3 connected
+monitor---->register datapath: 0000000000000004
+monitor---->register datapath: 0000000000000001
+monitor---->register datapath: 0000000000000005
+monitor---->register datapath: 0000000000000003
+monitor---->register datapath: 0000000000000002
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1, 2), (1, 4), (1, 3), (2, 5), (4, 5), (3, 5)]
+discovery--->==============================
+shortest=====>[PATH] [10.0.0.4 <----> 10.0.0.1]: [5, 2, 1]
+shortest=====>[PATH] [10.0.0.4 <----> 10.0.0.3]: [5, 2, 1]
+shortest=====>[PATH] [10.0.0.4 <----> 10.0.0.2]: [5, 2, 1]
+shortest=====>[PATH] [10.0.0.1 <----> 10.0.0.3]: [1]
+shortest=====>[PATH] [10.0.0.1 <----> 10.0.0.2]: [1]
+shortest=====>[PATH] [10.0.0.3 <----> 10.0.0.2]: [1]
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='be:95:ee:9f:b9:ef',name=b's5-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='8e:1e:7d:02:fe:2a',name=b's5-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='16:e1:67:cf:d9:37',name=b's2-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='1a:05:20:02:ea:98',name=b's5-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='4e:6e:5f:90:30:65',name=b's3-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='82:3f:41:a6:85:7f',name=b's2-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='ce:db:62:77:9f:72',name=b's1-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='7e:d0:1b:22:5c:86',name=b's1-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='52:b4:52:10:7d:17',name=b's3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=1,hw_addr='96:1c:bf:ef:0b:f3',name=b's4-eth1',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='96:1c:bf:ef:0b:f3',name=b's4-eth1',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='2a:47:05:b2:91:00',name=b's1-eth3',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='2a:47:05:b2:91:00',name=b's1-eth3',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='fa:18:35:4e:49:a8',name=b's4-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='9e:cc:93:3a:b0:a8',name=b's5-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='46:79:5e:1c:fc:e1',name=b's1-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=5,hw_addr='ba:44:e6:e2:d4:2a',name=b's1-eth5',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=5,hw_addr='ba:44:e6:e2:d4:2a',name=b's1-eth5',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=6,hw_addr='c2:92:f9:4f:02:fc',name=b's1-eth6',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+monitor---> unreigster datapath: 0000000000000004
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_shortest_path.py", line 70, in super_schedule
+    self.network_delay.scheduler()
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_monitor.py", line 63, in scheduler
+    self._request_stats()
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_monitor.py", line 91, in _request_stats
+    for datapath in self.datapaths_table.values():
+RuntimeError: dictionary changed size during iteration
+
+monitor---> unreigster datapath: 0000000000000001
+monitor---> unreigster datapath: 0000000000000003
+monitor---> unreigster datapath: 0000000000000005
+monitor---> unreigster datapath: 0000000000000002

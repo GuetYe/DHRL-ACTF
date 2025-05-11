@@ -1,0 +1,136 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-mvgfcn5u because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app ryu.topology.switches
+loading app ryu.controller.ofp_handler
+instantiating app network_structure.py of NetworkStructure
+instantiating app ryu.topology.switches of Switches
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventSwitchEnter] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+discovery: Exception occurred during handler processing. Backtrace from offending handler [get_topology] servicing event [EventLinkAdd] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_structure.py", line 167, in get_topology
+    self.ap_id2.append(dpid)
+AttributeError: 'NetworkStructure' object has no attribute 'ap_id2'
+switches: Exception occurred during handler processing. Backtrace from offending handler [lldp_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/topology/switches.py", line 787, in lldp_packet_in_handler
+    dst_port_no = msg.match['in_port']
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_4_parser.py", line 820, in __getitem__
+    return dict(self._fields2)[key]
+KeyboardInterrupt
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================

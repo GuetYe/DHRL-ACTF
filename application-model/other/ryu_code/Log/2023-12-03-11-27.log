@@ -1,0 +1,125 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-4b506cje because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 1000000000000001
+discovery---> AccessPoint: 2 connected
+monitor---->register datapath: 1000000000000002
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000003
+discovery---> AccessPoint: 4 connected
+monitor---->register datapath: 1000000000000004
+discovery---> AccessPoint: 5 connected
+monitor---->register datapath: 1000000000000005
+discovery---> AccessPoint: 6 connected
+monitor---->register datapath: 1000000000000006
+discovery---> AccessPoint: 7 connected
+monitor---->register datapath: 1000000000000007
+discovery---> AccessPoint: 8 connected
+monitor---->register datapath: 1000000000000008
+discovery---> AccessPoint: 9 connected
+monitor---->register datapath: 1000000000000009
+discovery---> AccessPoint: 10 connected
+monitor---->register datapath: 100000000000000a
+discovery---> AccessPoint: 11 connected
+monitor---->register datapath: 100000000000000b
+discovery---> AccessPoint: 12 connected
+monitor---->register datapath: 100000000000000c
+discovery---> AccessPoint: 13 connected
+monitor---->register datapath: 100000000000000d
+discovery---> AccessPoint: 14 connected
+monitor---->register datapath: 100000000000000e
+discovery---> AccessPoint: 15 connected
+monitor---->register datapath: 100000000000000f
+discovery---> AccessPoint: 16 connected
+monitor---->register datapath: 1000000000000010
+discovery---> AccessPoint: 17 connected
+monitor---->register datapath: 1000000000000011
+discovery---> AccessPoint: 18 connected
+monitor---->register datapath: 1000000000000012
+discovery---> AccessPoint: 19 connected
+monitor---->register datapath: 1000000000000013
+discovery---> AccessPoint: 20 connected
+monitor---->register datapath: 1000000000000014
+discovery---> AccessPoint: 21 connected
+monitor---->register datapath: 1000000000000015
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='56:2d:0c:4e:31:20',name=b'ap21-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4,hw_addr='22:2c:e6:6c:69:dc',name=b'ap21-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='32:85:38:ef:c4:3c',name=b'ap21-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4294967294,hw_addr='0e:1f:f3:e3:f7:4b',name=b'ap21',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=1,hw_addr='02:00:00:00:32:00',name=b'ap21-wlan1',config=0,state=4,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+discovery---> AccessPoint: 22 connected
+monitor---->register datapath: 1000000000000016
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4294967294,hw_addr='12:98:c7:4e:bb:44',name=b'ap22',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='0e:62:6c:a9:e7:77',name=b'ap22-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4,hw_addr='b6:02:35:2a:a0:f2',name=b'ap22-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=6,hw_addr='22:30:b4:cf:fa:b9',name=b'ap22-eth6',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='62:0e:1f:c8:8a:09',name=b'ap22-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=1,hw_addr='02:00:00:00:33:00',name=b'ap22-wlan1',config=0,state=4,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=5,hw_addr='0a:2c:c6:46:c4:5d',name=b'ap22-eth5',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+discovery---> AccessPoint: 23 connected
+monitor---->register datapath: 1000000000000017
+discovery---> AccessPoint: 24 connected
+monitor---->register datapath: 1000000000000018
+discovery---> AccessPoint: 25 connected
+monitor---->register datapath: 1000000000000019
+discovery---> AccessPoint: 26 connected
+monitor---->register datapath: 100000000000001a
+discovery---> AccessPoint: 27 connected
+monitor---->register datapath: 100000000000001b
+discovery---> AccessPoint: 28 connected
+monitor---->register datapath: 100000000000001c
+discovery---> AccessPoint: 29 connected
+monitor---->register datapath: 100000000000001d
+discovery---> AccessPoint: 30 connected
+monitor---->register datapath: 100000000000001e
+Intelligent Routing:[1, 2]
+Intelligent Routing:[1, 2, 3]
+Intelligent Routing:[1, 2, 3, 4]
+Intelligent Routing:[2, 3, 4]
+Intelligent Routing:[1, 2, 3, 5]
+Intelligent Routing:[1, 2, 3, 4, 6]
+Intelligent Routing:[1, 2, 8, 7]
+Intelligent Routing:[1, 2, 8]
+Intelligent Routing:[1, 9]
+Intelligent Routing:[9]
+Intelligent Routing:[1, 9, 10]
+Intelligent Routing:[1, 2, 8, 11]
+Intelligent Routing:[1, 2, 8, 7, 12]
+Intelligent Routing:[1, 2, 8, 7, 12, 13]
+Intelligent Routing:[1, 2, 8, 11, 14]
+Intelligent Routing:[1, 2, 8, 11, 15]
+Intelligent Routing:[1, 9, 10, 16]
+Intelligent Routing:[1, 9, 10, 16, 17]
+Intelligent Routing:[1, 2, 8, 11, 15, 18]
+Intelligent Routing:[2, 8, 11, 15, 18]
+Intelligent Routing:[1, 2, 8, 11, 14, 19]
+Intelligent Routing:[1, 2, 8, 7, 12, 13, 20]
+Intelligent Routing:[1, 9, 10, 16, 17, 21]
+Intelligent Routing:[9, 10, 16, 17, 21]
+Intelligent Routing:[1, 9, 10, 16, 17, 22]
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code/network_delay.py", line 47, in scheduler
+    self.create_delay_graph()
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code/network_delay.py", line 130, in create_delay_graph
+    delay = self.calculate_delay(src, dst) # 计算时延信息
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code/network_delay.py", line 146, in calculate_delay
+    ryu_ofps_src_delay = self.echo_delay_table[src]
+KeyError: 2
+

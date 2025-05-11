@@ -1,0 +1,6 @@
+loading app simple_switch_stp_13.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Stp
+creating context stplib
+instantiating app simple_switch_stp_13.py of SimpleSwitch13
+instantiating app ryu.controller.ofp_handler of OFPHandler

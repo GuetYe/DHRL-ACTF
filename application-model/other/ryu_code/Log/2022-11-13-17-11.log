@@ -1,0 +1,40 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-b0vwguy0 because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000004
+monitor---->register datapath: 1000000000000001
+discovery---> AccessPoint: 3 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000006
+monitor---->register datapath: 1000000000000005
+monitor---->register datapath: 1000000000000003
+monitor---->register datapath: 1000000000000002
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/Task/ryu/network_delay.py", line 46, in scheduler
+    self.create_delay_graph()
+  File "/home/terry/LJQ/Task/ryu/network_delay.py", line 127, in create_delay_graph
+    delay = self.calculate_delay(src, dst)
+  File "/home/terry/LJQ/Task/ryu/network_delay.py", line 144, in calculate_delay
+    ryu_ofps_dst_delay = self.echo_delay_table[dst]
+KeyError: 4
+

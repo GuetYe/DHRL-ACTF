@@ -1,0 +1,241 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-hwwcjhwz because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+discovery---> switch: 1152921504606846978 connected
+monitor---->register datapath: 1000000000000002
+discovery---> switch: 1152921504606846979 connected
+monitor---->register datapath: 1000000000000003
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 5.687952041625977
+1152921504606846978 <---> 1152921504606846979 : 4.30750846862793
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='8a:f6:7f:c5:ed:e1',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='12:23:86:15:1c:1f',name=b'ap2-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000002        1        0        0        0        2      156        0
+1000000000000002        2        3      266        0        5      386        0
+1000000000000002        3        5      386        0       13     1171        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846979, 1152921504606846978)]
+discovery--->==============================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000003        1        0        0        0        2      156        0
+1000000000000003        2        3      266        0       12     1289        0
+1000000000000003        3       13     1171        0        5      386        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='ee:66:60:2f:25:5c',name=b'ap2-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='a2:25:f3:e3:e1:85',name=b'ap3-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 3.054380416870117
+1152921504606846978 <---> 1152921504606846979 : 2.006053924560547
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 59, in scheduler
+    self.create_bandwidth_graph()
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 316, in create_bandwidth_graph
+    capacity = self.network_structure.m_graph[src_dpid][dst_dpid]['bw']
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/cls.py", line 465, in __getitem__
+    return self.adj[n]
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/coreviews.py", line 79, in __getitem__
+    return AtlasView(self._atlas[name])
+KeyError: 1152921504606846979
+
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000002        1        0        0        0        8      624        0
+1000000000000002        2       18     2379        0       26     2859        0
+1000000000000002        3       26     2859        0       27     2919        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846979, 1152921504606846978)]
+discovery--->==============================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000003        1        0        0        0        7      546        0
+1000000000000003        2       18     2379        0       26     2859        0
+1000000000000003        3       27     2919        0       26     2859        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 2.2017955780029297
+1152921504606846978 <---> 1152921504606846979 : 2.1004676818847656
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 2.4356842041015625
+1152921504606846978 <---> 1152921504606846979 : 3.1816959381103516
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846979, 1152921504606846978)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 3.0341148376464844
+1152921504606846978 <---> 1152921504606846979 : 1.5134811401367188
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 2.086162567138672
+1152921504606846978 <---> 1152921504606846979 : 3.0112266540527344
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846979, 1152921504606846978)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 3.1189918518066406
+1152921504606846978 <---> 1152921504606846979 : 3.122568130493164
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846979, 1152921504606846978)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 3.021717071533203
+1152921504606846978 <---> 1152921504606846979 : 2.084016799926758
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 1.6605854034423828
+1152921504606846978 <---> 1152921504606846979 : 1.6255378723144531
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846979, 1152921504606846978)]
+discovery--->==============================
+shortest=====>[PATH] [10.0.0.2 <----> 10.0.0.3]: [1152921504606846978, 1152921504606846979]
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 3.0355453491210938
+1152921504606846978 <---> 1152921504606846979 : 2.122163772583008
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846979, 1152921504606846978)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 2.4313926696777344
+1152921504606846978 <---> 1152921504606846979 : 2.8183460235595703
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 2.0928382873535156
+1152921504606846978 <---> 1152921504606846979 : 2.4788379669189453
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846979, 1152921504606846978)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 3.001689910888672
+1152921504606846978 <---> 1152921504606846979 : 3.004789352416992
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='ee:66:60:2f:25:5c',name=b'ap2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='00:00:00:00:00:00',name=b'ap2-eth2',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='00:00:00:00:00:00',name=b'ap2-eth2',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='8a:f6:7f:c5:ed:e1',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='a2:25:f3:e3:e1:85',name=b'ap3-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='12:23:86:15:1c:1f',name=b'ap2-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+monitor---> unreigster datapath: 1000000000000003
+monitor---> unreigster datapath: 1000000000000002
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 2.7494430541992188
+1152921504606846978 <---> 1152921504606846979 : 2.1305084228515625
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 2.7494430541992188
+1152921504606846978 <---> 1152921504606846979 : 2.1305084228515625
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846979 <---> 1152921504606846978 : 2.7494430541992188
+1152921504606846978 <---> 1152921504606846979 : 2.1305084228515625

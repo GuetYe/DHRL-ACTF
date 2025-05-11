@@ -1,0 +1,68 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-ah240y9x because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app ryu.topology.switches
+loading app ryu.controller.ofp_handler
+instantiating app network_structure.py of NetworkStructure
+instantiating app ryu.topology.switches of Switches
+instantiating app ryu.controller.ofp_handler of OFPHandler
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 154, in __call__
+    self.ofp_ssl_listen_port)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 206, in server_loop
+    datapath_connection_factory)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 127, in __init__
+    self.server = eventlet.listen(listen_info)
+  File "/home/terry/.local/lib/python3.6/site-packages/eventlet/convenience.py", line 78, in listen
+    sock.bind(addr)
+OSError: [Errno 98] 地址已在使用
+
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-r5ujb6n9 because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app ryu.topology.switches
+loading app ryu.controller.ofp_handler
+instantiating app network_structure.py of NetworkStructure
+instantiating app ryu.topology.switches of Switches
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 3 connected
+discovery---> AccessPoint: 4 connected
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 4), (2, 4)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 4), (2, 4)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================

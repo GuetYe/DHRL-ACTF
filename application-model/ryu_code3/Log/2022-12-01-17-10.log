@@ -1,0 +1,121 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-ludrkh6h because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 1000000000000006
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 2 connected
+monitor---->register datapath: 1000000000000005
+monitor---->register datapath: 1000000000000003
+monitor---->register datapath: 1000000000000001
+monitor---->register datapath: 1000000000000004
+monitor---->register datapath: 1000000000000002
+discovery---> AccessPoint: 7 connected
+monitor---->register datapath: 1000000000000007
+discovery---> AccessPoint: 8 connected
+monitor---->register datapath: 1000000000000008
+discovery---> AccessPoint: 9 connected
+monitor---->register datapath: 1000000000000009
+discovery---> AccessPoint: 10 connected
+monitor---->register datapath: 100000000000000a
+discovery---> AccessPoint: 11 connected
+monitor---->register datapath: 100000000000000b
+discovery---> AccessPoint: 12 connected
+monitor---->register datapath: 100000000000000c
+discovery---> AccessPoint: 13 connected
+monitor---->register datapath: 100000000000000d
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4,hw_addr='12:2b:ba:1f:2c:6f',name=b'ap13-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='2a:db:c3:db:c1:42',name=b'ap13-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=5,hw_addr='a6:bb:04:49:bc:c5',name=b'ap13-eth5',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4294967294,hw_addr='12:ce:15:a6:76:40',name=b'ap13',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='b2:fe:42:0e:96:73',name=b'ap13-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=1,hw_addr='02:00:00:00:1a:00',name=b'ap13-wlan1',config=0,state=4,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+discovery---> AccessPoint: 14 connected
+monitor---->register datapath: 100000000000000e
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu_code/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 6

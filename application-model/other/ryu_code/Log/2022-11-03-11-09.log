@@ -1,0 +1,56 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-3kmrq40n because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000002
+monitor---->register datapath: 1000000000000003
+monitor---->register datapath: 1000000000000001
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+shortest=====>[PATH] [192.168.0.3 <----> 192.168.0.1]: [2, 1]
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 103, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 122, in calculate_shortest_paths
+    self.install_flow(path, eth_type, src_ip, dst_ip, in_port, msg.buffer_id, msg.data)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 173, in install_flow
+    first_dp = self.network_monitor.datapaths_table[path[0]]
+KeyError: 2

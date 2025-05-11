@@ -1,0 +1,5 @@
+(30, 27, {'free_bw': 0, 'delay': 0, 'loss': 0, 'used_bw': 0, 'pkt_err': 0, 'pkt_drop': 0, 'distance': 0})
+(30, 26, {'free_bw': 0, 'delay': 0, 'loss': 0, 'used_bw': 0, 'pkt_err': 0, 'pkt_drop': 0, 'distance': 0})
+(30, 29, {'free_bw': 0, 'delay': 0, 'loss': 0, 'used_bw': 0, 'pkt_err': 0, 'pkt_drop': 0, 'distance': 0})
+(27, 26, {'free_bw': 0, 'delay': 0, 'loss': 0, 'used_bw': 0, 'pkt_err': 0, 'pkt_drop': 0, 'distance': 0})
+(29, 28, {'free_bw': 0, 'delay': 0, 'loss': 0, 'used_bw': 0, 'pkt_err': 0, 'pkt_drop': 0, 'distance': 0})

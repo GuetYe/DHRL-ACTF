@@ -1,0 +1,1301 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-ahbsang1 because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app ryu.controller.ofp_handler
+loading app ryu.topology.switches
+loading app ryu.controller.ofp_handler
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app ryu.controller.ofp_handler of OFPHandler
+instantiating app ryu.topology.switches of Switches
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery---> access_table: {}
+discovery--->=============================================================================
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 1000000000000001
+discovery---> AccessPoint: 2 connected
+monitor---->register datapath: 1000000000000002
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000003
+discovery---> AccessPoint: 4 connected
+monitor---->register datapath: 1000000000000004
+discovery---> AccessPoint: 5 connected
+monitor---->register datapath: 1000000000000005
+discovery---> AccessPoint: 6 connected
+monitor---->register datapath: 1000000000000006
+discovery---> AccessPoint: 7 connected
+monitor---->register datapath: 1000000000000007
+discovery---> AccessPoint: 8 connected
+monitor---->register datapath: 1000000000000008
+discovery---> AccessPoint: 9 connected
+monitor---->register datapath: 1000000000000009
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='56:fc:7a:99:c9:db',name=b'ap9-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4294967294,hw_addr='90:00:00:00:00:00',name=b'ap9',config=1,state=1,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=1,hw_addr='90:00:00:00:00:00',name=b'ap9-wlan1',config=0,state=4,curr=0,advertised=0,supported=0,peer=0,curr_speed=0,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4,hw_addr='82:ec:f3:7d:97:e1',name=b'ap9-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='36:ba:af:8b:f7:ee',name=b'ap9-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+discovery---> AccessPoint: 10 connected
+monitor---->register datapath: 100000000000000a
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 9), (1, 4), (1, 5), (1, 6), (4, 10), (5, 7), (5, 8), (5, 9), (6, 9), (7, 2), (7, 10), (2, 8), (8, 10)]
+discovery---> access_table: {}
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0        4      312        0
+0000000000000002        2       22     3030        0       24     3180        0
+0000000000000002        3       22     2949        0       23     3110        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0        3      234        0
+0000000000000006        2       25     3240        0       24     3212        0
+0000000000000006        3       23     3120        0       23     3120        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       16     1504        0       20     2104        0
+0000000000000001        2       24     3180        0       25     3240        0
+0000000000000001        3       24     3240        0       23     3110        0
+0000000000000001        4       23     3120        0       25     3240        0
+0000000000000001        5       24     3212        0       25     3240        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0        4      312        0
+0000000000000003        2       25     3240        0       24     3180        0
+0000000000000003        3       23     3120        0       24     3180        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0        2      156        0
+000000000000000a        2       24     3180        0       22     3060        0
+000000000000000a        3       23     3120        0       22     3060        0
+000000000000000a        4       23     3120        0       22     3060        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0        3      234        0
+0000000000000007        2       24     3180        0       22     3030        0
+0000000000000007        3       23     3120        0       23     3120        0
+0000000000000007        4       22     3060        0       23     3120        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        8      752        0       11     1130        0
+0000000000000005        2       25     3240        0       23     3120        0
+0000000000000005        3       23     3120        0       23     3120        0
+0000000000000005        4       22     3060        0       20     2511        0
+0000000000000005        5       23     3120        0       24     3180        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0        3      234        0
+0000000000000009        2       24     3180        0       23     3120        0
+0000000000000009        3       24     3180        0       23     3120        0
+0000000000000009        4       23     3120        0       23     3120        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0        6      594        0
+0000000000000004        2       23     3110        0       24     3240        0
+0000000000000004        3       22     3060        0       24     3180        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0        2      156        0
+0000000000000008        2       23     3110        0       22     2949        0
+0000000000000008        3       20     2511        0       22     3060        0
+0000000000000008        4       22     3060        0       23     3120        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0        6      468        0
+0000000000000002        2       25     3353        0       28     3563        0
+0000000000000002        3       26     3332        0       28     3563        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0        5      390        0
+0000000000000007        2       28     3563        0       25     3353        0
+0000000000000007        3       27     3503        0       26     3443        0
+0000000000000007        4       25     3383        0       26     3443        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       18     1644        0       25     2514        0
+0000000000000001        2       27     3503        0       28     3563        0
+0000000000000001        3       28     3623        0       28     3563        0
+0000000000000001        4       27     3503        0       29     3623        0
+0000000000000001        5       27     3535        0       28     3563        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        9      822        0       15     1452        0
+0000000000000005        2       29     3623        0       27     3503        0
+0000000000000005        3       26     3443        0       27     3503        0
+0000000000000005        4       26     3443        0       24     2894        0
+0000000000000005        5       27     3503        0       28     3563        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0        5      390        0
+0000000000000006        2       28     3563        0       27     3535        0
+0000000000000006        3       27     3503        0       27     3503        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0        4      312        0
+000000000000000a        2       27     3503        0       25     3383        0
+000000000000000a        3       26     3443        0       25     3383        0
+000000000000000a        4       26     3443        0       25     3383        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0        6      468        0
+0000000000000009        2       28     3563        0       27     3503        0
+0000000000000009        3       28     3563        0       27     3503        0
+0000000000000009        4       27     3503        0       27     3503        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0        6      468        0
+0000000000000003        2       28     3563        0       27     3503        0
+0000000000000003        3       27     3503        0       28     3563        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0        9      828        0
+0000000000000004        2       28     3563        0       28     3623        0
+0000000000000004        3       25     3383        0       27     3503        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0        5      390        0
+0000000000000008        2       28     3563        0       26     3332        0
+0000000000000008        3       24     2894        0       26     3443        0
+0000000000000008        4       25     3383        0       26     3443        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0        9      702        0
+0000000000000003        2       31     3743        0       30     3683        0
+0000000000000003        3       29     3623        0       30     3683        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       12     1062        0
+0000000000000004        2       30     3683        0       31     3803        0
+0000000000000004        3       28     3563        0       30     3683        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0        8      624        0
+0000000000000006        2       31     3743        0       30     3715        0
+0000000000000006        3       29     3623        0       29     3623        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0        8      624        0
+0000000000000009        2       30     3683        0       29     3623        0
+0000000000000009        3       30     3683        0       29     3623        0
+0000000000000009        4       29     3623        0       29     3623        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0        7      546        0
+0000000000000008        2       30     3683        0       28     3452        0
+0000000000000008        3       26     3014        0       28     3563        0
+0000000000000008        4       28     3563        0       29     3623        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        9      822        0       17     1608        0
+0000000000000005        2       31     3743        0       29     3623        0
+0000000000000005        3       29     3623        0       30     3683        0
+0000000000000005        4       28     3563        0       26     3014        0
+0000000000000005        5       29     3623        0       30     3683        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0        8      624        0
+0000000000000007        2       31     3743        0       28     3533        0
+0000000000000007        3       30     3683        0       29     3623        0
+0000000000000007        4       28     3563        0       29     3623        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0        7      546        0
+000000000000000a        2       30     3683        0       28     3563        0
+000000000000000a        3       29     3623        0       28     3563        0
+000000000000000a        4       29     3623        0       28     3563        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       18     1644        0       27     2670        0
+0000000000000001        2       30     3683        0       31     3743        0
+0000000000000001        3       31     3803        0       30     3683        0
+0000000000000001        4       29     3623        0       31     3743        0
+0000000000000001        5       30     3715        0       31     3743        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0        9      702        0
+0000000000000002        2       28     3533        0       31     3743        0
+0000000000000002        3       28     3452        0       30     3683        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       11      858        0
+0000000000000003        2       33     3863        0       33     3873        0
+0000000000000003        3       33     3873        0       34     3933        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       12      936        0
+0000000000000002        2       30     3653        0       33     3863        0
+0000000000000002        3       31     3632        0       33     3863        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0        9      702        0
+000000000000000a        2       33     3873        0       30     3683        0
+000000000000000a        3       31     3743        0       31     3743        0
+000000000000000a        4       31     3743        0       31     3753        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       18     1644        0       30     2904        0
+0000000000000001        2       33     3873        0       33     3863        0
+0000000000000001        3       34     3993        0       33     3863        0
+0000000000000001        4       32     3803        0       34     3923        0
+0000000000000001        5       34     3965        0       35     3993        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       10      780        0
+0000000000000008        2       33     3863        0       31     3632        0
+0000000000000008        3       30     3264        0       31     3743        0
+0000000000000008        4       31     3753        0       31     3743        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       10      780        0
+0000000000000007        2       33     3863        0       30     3653        0
+0000000000000007        3       32     3803        0       32     3813        0
+0000000000000007        4       31     3743        0       31     3743        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       11      858        0
+0000000000000006        2       35     3993        0       34     3965        0
+0000000000000006        3       33     3873        0       32     3803        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       14     1218        0
+0000000000000004        2       33     3863        0       34     3993        0
+0000000000000004        3       30     3683        0       33     3873        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       11      858        0
+0000000000000009        2       34     3933        0       33     3873        0
+0000000000000009        3       34     3933        0       32     3803        0
+0000000000000009        4       32     3803        0       33     3873        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        9      822        0       20     1842        0
+0000000000000005        2       34     3923        0       32     3803        0
+0000000000000005        3       32     3813        0       32     3803        0
+0000000000000005        4       31     3743        0       30     3264        0
+0000000000000005        5       32     3803        0       34     3933        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 9), (1, 4), (1, 5), (1, 6), (4, 10), (5, 7), (5, 8), (5, 9), (6, 9), (7, 2), (7, 10), (2, 8), (8, 10)]
+discovery---> access_table: {}
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       13     1014        0
+0000000000000006        2       38     4316        0       37     4288        0
+0000000000000006        3       36     4196        0       36     4196        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       20     1784        0       34     3236        0
+0000000000000001        2       37     4256        0       38     4316        0
+0000000000000001        3       38     4376        0       38     4316        0
+0000000000000001        4       36     4196        0       38     4316        0
+0000000000000001        5       37     4288        0       38     4316        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       17     1452        0
+0000000000000004        2       38     4316        0       38     4376        0
+0000000000000004        3       35     4136        0       37     4256        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       13     1014        0
+0000000000000008        2       38     4316        0       36     4085        0
+0000000000000008        3       33     3587        0       36     4196        0
+0000000000000008        4       35     4136        0       36     4196        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       14     1092        0
+0000000000000003        2       38     4316        0       37     4256        0
+0000000000000003        3       36     4196        0       37     4256        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       14     1092        0
+0000000000000002        2       35     4106        0       38     4316        0
+0000000000000002        3       36     4085        0       38     4316        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       13     1014        0
+0000000000000007        2       38     4316        0       35     4106        0
+0000000000000007        3       37     4256        0       36     4196        0
+0000000000000007        4       35     4136        0       36     4196        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       13     1014        0
+0000000000000009        2       37     4256        0       36     4196        0
+0000000000000009        3       37     4256        0       36     4196        0
+0000000000000009        4       36     4196        0       36     4196        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       12      936        0
+000000000000000a        2       37     4256        0       35     4136        0
+000000000000000a        3       36     4196        0       35     4136        0
+000000000000000a        4       36     4196        0       35     4136        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       10      892        0       23     2086        0
+0000000000000005        2       38     4316        0       36     4196        0
+0000000000000005        3       36     4196        0       37     4256        0
+0000000000000005        4       36     4196        0       33     3587        0
+0000000000000005        5       36     4196        0       37     4256        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       16     1248        0
+0000000000000003        2       40     4436        0       39     4376        0
+0000000000000003        3       39     4376        0       40     4436        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       17     1326        0
+0000000000000002        2       37     4226        0       40     4436        0
+0000000000000002        3       38     4205        0       40     4436        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       15     1170        0
+0000000000000007        2       40     4436        0       37     4226        0
+0000000000000007        3       39     4376        0       38     4316        0
+0000000000000007        4       38     4316        0       38     4316        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       15     1170        0
+0000000000000008        2       40     4436        0       38     4205        0
+0000000000000008        3       36     3767        0       38     4316        0
+0000000000000008        4       38     4316        0       38     4316        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       15     1170        0
+000000000000000a        2       39     4376        0       38     4316        0
+000000000000000a        3       38     4316        0       38     4316        0
+000000000000000a        4       39     4376        0       38     4316        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       16     1248        0
+0000000000000006        2       41     4496        0       40     4468        0
+0000000000000006        3       39     4376        0       39     4376        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       16     1248        0
+0000000000000009        2       40     4436        0       39     4376        0
+0000000000000009        3       40     4436        0       39     4376        0
+0000000000000009        4       39     4376        0       39     4376        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       20     1784        0       37     3470        0
+0000000000000001        2       39     4376        0       40     4436        0
+0000000000000001        3       40     4496        0       40     4436        0
+0000000000000001        4       39     4376        0       41     4496        0
+0000000000000001        5       40     4468        0       41     4496        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       19     1608        0
+0000000000000004        2       40     4436        0       40     4496        0
+0000000000000004        3       38     4316        0       39     4376        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       10      892        0       26     2320        0
+0000000000000005        2       41     4496        0       39     4376        0
+0000000000000005        3       38     4316        0       39     4376        0
+0000000000000005        4       38     4316        0       36     3767        0
+0000000000000005        5       39     4376        0       40     4436        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       19     1482        0
+0000000000000003        2       43     4616        0       42     4556        0
+0000000000000003        3       41     4496        0       42     4556        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       19     1482        0
+0000000000000002        2       40     4406        0       43     4616        0
+0000000000000002        3       41     4385        0       43     4616        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       20     1784        0       40     3704        0
+0000000000000001        2       42     4556        0       43     4616        0
+0000000000000001        3       43     4676        0       43     4616        0
+0000000000000001        4       42     4556        0       43     4616        0
+0000000000000001        5       42     4588        0       43     4616        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       18     1404        0
+0000000000000007        2       43     4616        0       40     4406        0
+0000000000000007        3       42     4556        0       41     4496        0
+0000000000000007        4       40     4436        0       41     4496        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       10      892        0       29     2554        0
+0000000000000005        2       43     4616        0       42     4556        0
+0000000000000005        3       41     4496        0       42     4556        0
+0000000000000005        4       41     4496        0       39     3947        0
+0000000000000005        5       41     4496        0       42     4556        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       17     1326        0
+000000000000000a        2       42     4556        0       40     4436        0
+000000000000000a        3       41     4496        0       40     4436        0
+000000000000000a        4       41     4496        0       40     4436        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       18     1404        0
+0000000000000008        2       43     4616        0       41     4385        0
+0000000000000008        3       39     3947        0       41     4496        0
+0000000000000008        4       40     4436        0       41     4496        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       18     1404        0
+0000000000000009        2       42     4556        0       41     4496        0
+0000000000000009        3       42     4556        0       41     4496        0
+0000000000000009        4       41     4496        0       41     4496        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       22     1842        0
+0000000000000004        2       43     4616        0       43     4676        0
+0000000000000004        3       40     4436        0       42     4556        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       18     1404        0
+0000000000000006        2       43     4616        0       42     4588        0
+0000000000000006        3       41     4496        0       41     4496        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       20     1784        0       42     3860        0
+0000000000000001        2       45     4736        0       45     4736        0
+0000000000000001        3       45     4796        0       45     4736        0
+0000000000000001        4       44     4676        0       46     4796        0
+0000000000000001        5       45     4768        0       46     4796        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       21     1638        0
+0000000000000009        2       45     4736        0       44     4676        0
+0000000000000009        3       45     4736        0       44     4676        0
+0000000000000009        4       44     4676        0       44     4676        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       10      892        0       31     2710        0
+0000000000000005        2       46     4796        0       44     4676        0
+0000000000000005        3       44     4676        0       44     4676        0
+0000000000000005        4       43     4616        0       40     4007        0
+0000000000000005        5       44     4676        0       45     4736        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       21     1638        0
+0000000000000006        2       46     4796        0       45     4768        0
+0000000000000006        3       44     4676        0       44     4676        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       24     1998        0
+0000000000000004        2       45     4736        0       45     4796        0
+0000000000000004        3       43     4616        0       45     4736        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       20     1560        0
+0000000000000008        2       45     4736        0       43     4505        0
+0000000000000008        3       40     4007        0       43     4616        0
+0000000000000008        4       43     4616        0       44     4676        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       20     1560        0
+0000000000000007        2       45     4736        0       42     4526        0
+0000000000000007        3       44     4676        0       44     4676        0
+0000000000000007        4       43     4616        0       44     4676        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       22     1716        0
+0000000000000002        2       42     4526        0       45     4736        0
+0000000000000002        3       43     4505        0       45     4736        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       20     1560        0
+000000000000000a        2       45     4736        0       43     4616        0
+000000000000000a        3       44     4676        0       43     4616        0
+000000000000000a        4       44     4676        0       43     4616        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       22     1716        0
+0000000000000003        2       45     4736        0       45     4736        0
+0000000000000003        3       44     4676        0       45     4736        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 9), (1, 4), (1, 5), (1, 6), (4, 10), (5, 7), (5, 8), (5, 9), (6, 9), (7, 2), (7, 10), (2, 8), (8, 10)]
+discovery---> access_table: {}
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       24     1872        0
+0000000000000002        2       45     4706        0       48     4916        0
+0000000000000002        3       46     4685        0       48     4916        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       24     1872        0
+0000000000000003        2       48     4916        0       47     4856        0
+0000000000000003        3       47     4856        0       48     4916        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       27     2232        0
+0000000000000004        2       48     4916        0       48     4976        0
+0000000000000004        3       45     4736        0       47     4856        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       10      892        0       34     2944        0
+0000000000000005        2       49     4976        0       47     4856        0
+0000000000000005        3       46     4796        0       47     4856        0
+0000000000000005        4       46     4796        0       43     4187        0
+0000000000000005        5       46     4796        0       48     4916        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       22     1716        0
+000000000000000a        2       47     4856        0       45     4736        0
+000000000000000a        3       46     4796        0       45     4736        0
+000000000000000a        4       46     4796        0       45     4736        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       23     1794        0
+0000000000000006        2       48     4916        0       47     4888        0
+0000000000000006        3       47     4856        0       47     4856        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       23     1794        0
+0000000000000009        2       48     4916        0       47     4856        0
+0000000000000009        3       48     4916        0       46     4796        0
+0000000000000009        4       47     4856        0       47     4856        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       23     1794        0
+0000000000000008        2       48     4916        0       46     4685        0
+0000000000000008        3       43     4187        0       46     4796        0
+0000000000000008        4       45     4736        0       46     4796        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       20     1784        0       45     4094        0
+0000000000000001        2       47     4856        0       48     4916        0
+0000000000000001        3       48     4976        0       48     4916        0
+0000000000000001        4       47     4856        0       49     4976        0
+0000000000000001        5       47     4888        0       48     4916        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       23     1794        0
+0000000000000007        2       48     4916        0       45     4706        0
+0000000000000007        3       47     4856        0       46     4796        0
+0000000000000007        4       45     4736        0       46     4796        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       27     2106        0
+0000000000000003        2       51     5096        0       51     5106        0
+0000000000000003        3       49     4976        0       51     5106        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       27     2106        0
+0000000000000002        2       48     4886        0       51     5096        0
+0000000000000002        3       48     4805        0       50     5036        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       26     2028        0
+0000000000000007        2       51     5096        0       48     4886        0
+0000000000000007        3       50     5036        0       50     5046        0
+0000000000000007        4       48     4916        0       49     4976        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       25     1950        0
+000000000000000a        2       51     5106        0       48     4916        0
+000000000000000a        3       49     4976        0       48     4916        0
+000000000000000a        4       49     4976        0       48     4916        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       20     1784        0       47     4250        0
+0000000000000001        2       51     5106        0       51     5096        0
+0000000000000001        3       51     5156        0       50     5036        0
+0000000000000001        4       49     4976        0       51     5096        0
+0000000000000001        5       51     5138        0       52     5166        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       25     1950        0
+0000000000000008        2       50     5036        0       48     4805        0
+0000000000000008        3       45     4307        0       48     4916        0
+0000000000000008        4       48     4916        0       49     4976        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       26     2028        0
+0000000000000006        2       52     5166        0       51     5138        0
+0000000000000006        3       50     5046        0       49     4976        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       11      962        0       37     3188        0
+0000000000000005        2       51     5096        0       49     4976        0
+0000000000000005        3       50     5046        0       50     5036        0
+0000000000000005        4       48     4916        0       45     4307        0
+0000000000000005        5       49     4976        0       50     5036        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       26     2028        0
+0000000000000009        2       51     5106        0       49     4976        0
+0000000000000009        3       50     5036        0       49     4976        0
+0000000000000009        4       49     4976        0       50     5046        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       29     2388        0
+0000000000000004        2       50     5036        0       51     5156        0
+0000000000000004        3       48     4916        0       51     5106        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       30     2340        0
+0000000000000002        2       52     5279        0       54     5419        0
+0000000000000002        3       53     5258        0       54     5419        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       28     2184        0
+0000000000000007        2       54     5419        0       52     5279        0
+0000000000000007        3       54     5429        0       53     5369        0
+0000000000000007        4       52     5309        0       53     5369        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       11      962        0       40     3422        0
+0000000000000005        2       56     5549        0       54     5429        0
+0000000000000005        3       53     5369        0       54     5429        0
+0000000000000005        4       52     5299        0       50     4760        0
+0000000000000005        5       54     5429        0       55     5489        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       32     2622        0
+0000000000000004        2       54     5419        0       55     5549        0
+0000000000000004        3       51     5239        0       54     5429        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       29     2262        0
+0000000000000009        2       55     5489        0       54     5429        0
+0000000000000009        3       55     5489        0       54     5429        0
+0000000000000009        4       54     5429        0       54     5429        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       29     2262        0
+0000000000000003        2       55     5489        0       54     5429        0
+0000000000000003        3       54     5429        0       55     5489        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       29     2262        0
+0000000000000006        2       55     5489        0       55     5521        0
+0000000000000006        3       54     5429        0       54     5429        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       21     1854        0       51     4572        0
+0000000000000001        2       54     5429        0       55     5489        0
+0000000000000001        3       55     5549        0       54     5419        0
+0000000000000001        4       54     5429        0       56     5549        0
+0000000000000001        5       55     5521        0       55     5489        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       28     2184        0
+0000000000000008        2       54     5419        0       53     5258        0
+0000000000000008        3       50     4760        0       52     5299        0
+0000000000000008        4       51     5106        0       52     5299        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       27     2106        0
+000000000000000a        2       54     5429        0       51     5239        0
+000000000000000a        3       53     5369        0       52     5309        0
+000000000000000a        4       52     5299        0       51     5106        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       32     2496        0
+0000000000000003        2       58     5669        0       57     5609        0
+0000000000000003        3       56     5549        0       57     5609        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       32     2496        0
+0000000000000002        2       55     5459        0       57     5599        0
+0000000000000002        3       56     5438        0       56     5539        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       31     2418        0
+0000000000000008        2       56     5539        0       56     5438        0
+0000000000000008        3       52     4880        0       55     5479        0
+0000000000000008        4       55     5489        0       56     5549        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       11      962        0       42     3578        0
+0000000000000005        2       57     5609        0       56     5549        0
+0000000000000005        3       56     5549        0       57     5609        0
+0000000000000005        4       55     5479        0       52     4880        0
+0000000000000005        5       56     5549        0       57     5609        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       31     2418        0
+0000000000000009        2       57     5609        0       56     5549        0
+0000000000000009        3       57     5609        0       56     5549        0
+0000000000000009        4       56     5549        0       56     5549        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       31     2418        0
+0000000000000006        2       58     5669        0       57     5641        0
+0000000000000006        3       56     5549        0       56     5549        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       31     2418        0
+0000000000000007        2       57     5599        0       55     5459        0
+0000000000000007        3       57     5609        0       56     5549        0
+0000000000000007        4       55     5489        0       56     5549        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       30     2340        0
+000000000000000a        2       57     5609        0       55     5489        0
+000000000000000a        3       56     5549        0       55     5489        0
+000000000000000a        4       56     5549        0       55     5489        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       35     2856        0
+0000000000000004        2       58     5669        0       58     5729        0
+0000000000000004        3       55     5489        0       57     5609        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       22     1924        0       54     4816        0
+0000000000000001        2       57     5609        0       58     5669        0
+0000000000000001        3       58     5729        0       58     5669        0
+0000000000000001        4       56     5549        0       57     5609        0
+0000000000000001        5       57     5641        0       58     5669        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 9), (1, 4), (1, 5), (1, 6), (4, 10), (5, 7), (5, 8), (5, 9), (6, 9), (7, 2), (7, 10), (2, 8), (8, 10)]
+discovery---> access_table: {}
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       35     2730        0
+0000000000000002        2       57     5579        0       60     5789        0
+0000000000000002        3       58     5558        0       60     5789        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       33     2574        0
+0000000000000007        2       60     5789        0       57     5579        0
+0000000000000007        3       59     5729        0       58     5669        0
+0000000000000007        4       58     5669        0       58     5669        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       11      962        0       45     3812        0
+0000000000000005        2       60     5789        0       59     5729        0
+0000000000000005        3       58     5669        0       59     5729        0
+0000000000000005        4       58     5669        0       55     5060        0
+0000000000000005        5       59     5729        0       60     5789        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       34     2652        0
+0000000000000003        2       60     5789        0       59     5729        0
+0000000000000003        3       59     5729        0       60     5789        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       33     2574        0
+000000000000000a        2       59     5729        0       58     5669        0
+000000000000000a        3       58     5669        0       58     5669        0
+000000000000000a        4       58     5669        0       58     5669        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       34     2652        0
+0000000000000006        2       61     5849        0       60     5821        0
+0000000000000006        3       59     5729        0       59     5729        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       33     2574        0
+0000000000000008        2       60     5789        0       58     5558        0
+0000000000000008        3       55     5060        0       58     5669        0
+0000000000000008        4       58     5669        0       58     5669        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       37     3012        0
+0000000000000004        2       60     5789        0       60     5849        0
+0000000000000004        3       58     5669        0       59     5729        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       34     2652        0
+0000000000000009        2       60     5789        0       59     5729        0
+0000000000000009        3       60     5789        0       59     5729        0
+0000000000000009        4       59     5729        0       59     5729        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       22     1924        0       57     5050        0
+0000000000000001        2       59     5729        0       60     5789        0
+0000000000000001        3       60     5849        0       60     5789        0
+0000000000000001        4       59     5729        0       60     5789        0
+0000000000000001        5       60     5821        0       61     5849        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='76:54:b7:87:5d:01',name=b'ap3-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='76:54:b7:87:5d:01',name=b'ap3-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='ae:10:26:0f:52:a7',name=b'ap1-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='ae:10:26:0f:52:a7',name=b'ap1-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='a2:f8:b3:fe:84:5e',name=b'ap4-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='42:0e:3d:97:69:92',name=b'ap1-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=4,hw_addr='e2:e6:ef:c7:0d:0b',name=b'ap1-eth4',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='e2:e6:ef:c7:0d:0b',name=b'ap1-eth4',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='12:2b:ba:1f:2c:6f',name=b'ap5-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='12:2b:ba:1f:2c:6f',name=b'ap5-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       36     2808        0
+0000000000000008        2       63     5969        0       61     5738        0
+0000000000000008        3       58     5240        0       61     5849        0
+0000000000000008        4       60     5789        0       61     5849        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       36     2808        0
+0000000000000009        2       62     5909        0       61     5849        0
+0000000000000009        3       62     5909        0       61     5849        0
+0000000000000009        4       61     5849        0       61     5849        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=5,hw_addr='76:d1:35:d8:a5:d8',name=b'ap1-eth5',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       22     1924        0       60     5284        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       35     2730        0
+000000000000000a        2       62     5909        0       60     5789        0
+000000000000000a        3       61     5849        0       60     5789        0
+000000000000000a        4       61     5849        0       60     5789        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       37     2886        0
+0000000000000003        3       61     5849        0       62     5909        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       40     3246        0
+0000000000000004        3       60     5789        0       62     5909        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='e6:f0:ac:c5:0d:50',name=b'ap6-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       36     2808        0
+0000000000000006        3       61     5849        0       61     5849        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       37     2886        0
+0000000000000002        2 18446744073709551615 18446744073709551615 18446744073709551615 18446744073709551615 18446744073709551615 18446744073709551615
+0000000000000002        3       61     5738        0       63     5969        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       11      962        0       47     3968        0
+0000000000000005        3       61     5849        0       62     5909        0
+0000000000000005        4       61     5849        0       58     5240        0
+0000000000000005        5       61     5849        0       62     5909        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       36     2808        0
+0000000000000007        2 18446744073709551615 18446744073709551615 18446744073709551615 18446744073709551615 18446744073709551615 18446744073709551615
+0000000000000007        3       62     5909        0       61     5849        0
+0000000000000007        4       60     5789        0       61     5849        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='52:e4:27:06:47:9d',name=b'ap2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='52:e4:27:06:47:9d',name=b'ap2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='a6:bb:04:49:bc:c5',name=b'ap7-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='a6:bb:04:49:bc:c5',name=b'ap7-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='36:ba:af:8b:f7:ee',name=b'ap9-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='ee:98:ab:99:db:3e',name=b'ap8-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='d6:cc:6e:56:6a:9b',name=b'ap3-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='b2:14:ae:fd:23:69',name=b'ap2-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='56:68:d2:15:a8:36',name=b'ap4-eth3',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='56:68:d2:15:a8:36',name=b'ap4-eth3',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='7a:d7:d8:48:8e:46',name=b'ap10-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='7a:d7:d8:48:8e:46',name=b'ap10-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='ca:47:be:ca:36:5a',name=b'ap7-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='32:ce:ec:a3:e6:d4',name=b'ap5-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='3e:0c:e5:92:c2:a7',name=b'ap8-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='56:db:af:fe:6f:e1',name=b'ap5-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='56:fc:7a:99:c9:db',name=b'ap9-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='82:ec:f3:7d:97:e1',name=b'ap9-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='ca:dd:60:8c:4b:ac',name=b'ap10-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='b6:03:78:6a:0c:5b',name=b'ap7-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='4a:f4:36:33:8d:b3',name=b'ap6-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=5,hw_addr='02:0d:07:61:03:17',name=b'ap5-eth5',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='fa:78:4c:69:65:19',name=b'ap8-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='d2:29:f7:7c:aa:50',name=b'ap10-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       41     3198        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       41     3198        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       42     3276        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       42     3276        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       40     3120        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       45     3636        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       41     3198        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       22     1924        0       65     5674        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       41     3198        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       11      962        0       53     4436        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000009        1        0        0        0       47     3666        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       48     3744        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        3      306        0       50     4026        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000008        1        0        0        0       46     3588        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0       47     3666        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0       47     3666        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+000000000000000a        1        0        0        0       45     3510        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       22     1924        0       70     6064        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000007        1        0        0        0       46     3588        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       11      962        0       58     4826        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery---> access_table: {}
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery---> access_table: {}
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery---> access_table: {}
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery---> access_table: {}
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery---> access_table: {}
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery---> access_table: {}
+discovery--->=============================================================================

@@ -1,0 +1,852 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-f6j82hnc because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 1000000000000001
+monitor---->register datapath: 1000000000000003
+monitor---->register datapath: 1000000000000002
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 3 connected
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='d2:38:8c:b5:af:e7',name=b'ap2-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='4e:5f:8b:b6:f1:4b',name=b'ap1-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='92:23:85:00:aa:8d',name=b'ap3-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='e2:b7:dc:6f:e5:3e',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='0e:8f:95:fb:3a:b9',name=b'ap2-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='02:23:cf:95:c7:a2',name=b'ap1-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/Task/ryu/network_delay.py", line 46, in scheduler
+    self.create_delay_graph()
+  File "/home/terry/LJQ/Task/ryu/network_delay.py", line 127, in create_delay_graph
+    delay = self.calculate_delay(src, dst)
+  File "/home/terry/LJQ/Task/ryu/network_delay.py", line 143, in calculate_delay
+    ryu_ofps_src_delay = self.echo_delay_table[src]
+KeyError: 3
+
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0        6      468        0
+0000000000000001        2       22     2751        0       24     2881        0
+0000000000000001        3       22     2751        0       23     2811        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0        5      390        0
+0000000000000002        2       24     2881        0       22     2751        0
+0000000000000002        3       23     2821        0       24     2881        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0       11      858        0
+0000000000000001        2       31     3590        0       31     3590        0
+0000000000000001        3       31     3590        0       32     3650        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       11      858        0
+0000000000000002        2       31     3590        0       31     3590        0
+0000000000000002        3       31     3590        0       32     3650        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0       17     1326        0
+0000000000000001        2       36     3890        0       38     4020        0
+0000000000000001        3       37     3960        0       38     4020        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       17     1326        0
+0000000000000002        2       38     4020        0       36     3890        0
+0000000000000002        3       37     3960        0       38     4020        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0       22     1716        0
+0000000000000001        2       44     4523        0       44     4523        0
+0000000000000001        3       44     4523        0       45     4583        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       22     1716        0
+0000000000000002        2       44     4523        0       44     4523        0
+0000000000000002        3       44     4523        0       45     4583        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        2       84        0       30     2304        0
+0000000000000001        2       49     4823        0       53     5009        0
+0000000000000001        3       49     4823        0       53     5009        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0       28     2184        0
+0000000000000002        2       53     5009        0       49     4823        0
+0000000000000002        3       50     4883        0       50     4883        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+shortest=====>[PATH] [192.168.0.2 <----> 192.168.0.1]: [2, 3, 1]
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 103, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 122, in calculate_shortest_paths
+    self.install_flow(path, eth_type, src_ip, dst_ip, in_port, msg.buffer_id, msg.data)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 173, in install_flow
+    first_dp = self.network_monitor.datapaths_table[path[0]]
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      252        0       40     3012        0
+0000000000000001        2       55     5183        0       62     5505        0
+0000000000000001        3       56     5253        0       63     5565        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        2      140        0       35     2712        0
+0000000000000002        2       62     5505        0       55     5183        0
+0000000000000002        3       56     5253        0       57     5313        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      252        0       45     3402        0
+0000000000000001        2       61     5686        0       69     6068        0
+0000000000000001        3       63     5816        0       69     6068        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        2      140        0       41     3180        0
+0000000000000002        2       69     6068        0       61     5686        0
+0000000000000002        3       63     5816        0       63     5816        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+ArpHandler: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/arp_handler.py", line 84, in _packet_in_handler
+    datapath = self.monitor.datapaths_table[dpid]
+KeyError: 3
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      252        0       51     3870        0
+0000000000000001        2       68     6116        0       77     6512        0
+0000000000000001        3       68     6116        0       77     6512        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        3      182        0       47     3630        0
+0000000000000002        2       77     6512        0       68     6116        0
+0000000000000002        3       68     6116        0       69     6176        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+shortest=====>[PATH] [192.168.0.3 <----> 192.168.0.1]: [3, 1]
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 103, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 122, in calculate_shortest_paths
+    self.install_flow(path, eth_type, src_ip, dst_ip, in_port, msg.buffer_id, msg.data)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 173, in install_flow
+    first_dp = self.network_monitor.datapaths_table[path[0]]
+KeyError: 3
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      252        0       56     4260        0
+0000000000000001        2       74     6476        0       82     6812        0
+0000000000000001        3       74     6476        0       82     6812        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        5      266        0       55     4218        0
+0000000000000002        2       82     6812        0       74     6476        0
+0000000000000002        3       74     6476        0       74     6476        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      252        0       62     4728        0
+0000000000000001        2       79     6776        0       88     7172        0
+0000000000000001        3       79     6776        0       88     7172        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        5      266        0       60     4608        0
+0000000000000002        2       88     7172        0       79     6776        0
+0000000000000002        3       79     6776        0       80     6836        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+shortest=====>[PATH] [192.168.0.3 <----> 192.168.0.2]: [3, 2]
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 103, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 122, in calculate_shortest_paths
+    self.install_flow(path, eth_type, src_ip, dst_ip, in_port, msg.buffer_id, msg.data)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 173, in install_flow
+    first_dp = self.network_monitor.datapaths_table[path[0]]
+KeyError: 3
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      252        0       67     5118        0
+0000000000000001        2       85     7136        0       93     7472        0
+0000000000000001        3       85     7136        0       94     7532        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        5      266        0       66     5076        0
+0000000000000002        2       93     7472        0       85     7136        0
+0000000000000002        3       85     7136        0       86     7196        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      252        0       73     5586        0
+0000000000000001        2       90     7436        0       99     7832        0
+0000000000000001        3       91     7506        0       99     7832        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        5      266        0       72     5544        0
+0000000000000002        2       99     7832        0       90     7436        0
+0000000000000002        3       90     7436        0       92     7566        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      252        0       78     5976        0
+0000000000000001        2       97     7999        0      106     8405        0
+0000000000000001        3       98     8069        0      107     8465        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        5      266        0       77     5934        0
+0000000000000002        2      106     8405        0       97     7999        0
+0000000000000002        3       98     8069        0       99     8129        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      252        0       84     6444        0
+0000000000000001        2      102     8299        0      112     8765        0
+0000000000000001        3      103     8369        0      112     8765        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        5      266        0       83     6402        0
+0000000000000002        2      112     8765        0      102     8299        0
+0000000000000002        3      104     8429        0      104     8429        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        9      378        0       92     7014        0
+0000000000000001        2      109     8729        0      117     9065        0
+0000000000000001        3      109     8729        0      118     9125        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        5      266        0       88     6792        0
+0000000000000002        2      117     9065        0      109     8729        0
+0000000000000002        3      109     8729        0      110     8789        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+shortest=====>[PATH] [192.168.0.2 <----> 192.168.0.1]: [2, 3, 1]
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 103, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 122, in calculate_shortest_paths
+    self.install_flow(path, eth_type, src_ip, dst_ip, in_port, msg.buffer_id, msg.data)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 173, in install_flow
+    first_dp = self.network_monitor.datapaths_table[path[0]]
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        9      378        0       98     7482        0
+0000000000000001        2      114     9029        0      123     9425        0
+0000000000000001        3      115     9089        0      123     9425        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        6      364        0       94     7260        0
+0000000000000002        2      123     9425        0      114     9029        0
+0000000000000002        3      115     9089        0      115     9089        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        9      378        0      104     7950        0
+0000000000000001        2      120     9389        0      129     9785        0
+0000000000000001        3      120     9389        0      129     9785        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      100     7728        0
+0000000000000002        2      129     9785        0      120     9389        0
+0000000000000002        3      120     9389        0      121     9449        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+shortest=====>[PATH] [192.168.0.3 <----> 192.168.0.1]: [3, 1]
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 103, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 122, in calculate_shortest_paths
+    self.install_flow(path, eth_type, src_ip, dst_ip, in_port, msg.buffer_id, msg.data)
+  File "/home/terry/LJQ/Task/ryu/network_shortest_path.py", line 173, in install_flow
+    first_dp = self.network_monitor.datapaths_table[path[0]]
+KeyError: 3
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      112     8520        0
+0000000000000001        2      126     9749        0      134    10085        0
+0000000000000001        3      126     9749        0      134    10085        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      106     8196        0
+0000000000000002        2      134    10085        0      126     9749        0
+0000000000000002        3      126     9749        0      126     9749        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      118     8988        0
+0000000000000001        2      131    10049        0      140    10445        0
+0000000000000001        3      131    10049        0      140    10445        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      111     8586        0
+0000000000000002        2      140    10445        0      131    10049        0
+0000000000000002        3      131    10049        0      132    10109        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      123     9378        0
+0000000000000001        2      137    10409        0      145    10745        0
+0000000000000001        3      137    10409        0      146    10805        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      117     9054        0
+0000000000000002        2      145    10745        0      137    10409        0
+0000000000000002        3      137    10409        0      138    10469        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      129     9846        0
+0000000000000001        2      142    10709        0      151    11105        0
+0000000000000001        3      142    10709        0      151    11105        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      123     9522        0
+0000000000000002        2      151    11105        0      142    10709        0
+0000000000000002        3      142    10709        0      143    10769        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      134    10236        0
+0000000000000001        2      148    11069        0      156    11405        0
+0000000000000001        3      148    11069        0      157    11465        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      128     9912        0
+0000000000000002        2      156    11405        0      148    11069        0
+0000000000000002        3      148    11069        0      149    11129        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      140    10704        0
+0000000000000001        2      153    11369        0      162    11765        0
+0000000000000001        3      154    11439        0      162    11765        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      134    10380        0
+0000000000000002        2      162    11765        0      153    11369        0
+0000000000000002        3      153    11369        0      154    11429        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      139    10770        0
+0000000000000002        2      167    12065        0      159    11729        0
+0000000000000002        3      159    11729        0      161    11859        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      145    11094        0
+0000000000000001        2      159    11729        0      167    12065        0
+0000000000000001        3      160    11799        0      168    12125        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      151    11562        0
+0000000000000001        2      164    12029        0      173    12425        0
+0000000000000001        3      165    12099        0      173    12425        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      145    11238        0
+0000000000000002        2      173    12425        0      164    12029        0
+0000000000000002        3      165    12089        0      166    12159        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      157    12030        0
+0000000000000001        2      171    12592        0      179    12928        0
+0000000000000001        3      172    12662        0      181    13058        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      150    11628        0
+0000000000000002        2      179    12928        0      171    12592        0
+0000000000000002        3      172    12662        0      173    12722        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      162    12420        0
+0000000000000001        2      176    12892        0      186    13358        0
+0000000000000001        3      178    13022        0      186    13358        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      156    12096        0
+0000000000000002        2      186    13358        0      176    12892        0
+0000000000000002        3      178    13022        0      178    13022        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      168    12888        0
+0000000000000001        2      182    13252        0      192    13718        0
+0000000000000001        3      183    13322        0      192    13718        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      161    12486        0
+0000000000000002        2      192    13718        0      182    13252        0
+0000000000000002        3      183    13322        0      184    13382        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       12      504        0      173    13278        0
+0000000000000001        2      188    13612        0      197    14018        0
+0000000000000001        3      189    13682        0      198    14078        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_desc_stats_reply_handler] servicing event [EventOFPPortDescStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 147, in port_desc_stats_reply_handler
+    self.dpid_port_fueatures_table[dpid][ofport.port_no] = port_features
+KeyError: 2
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        7      406        0      167    12954        0
+0000000000000002        2      197    14018        0      188    13612        0
+0000000000000002        3      189    13682        0      189    13682        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 1), (3, 2), (1, 2)]
+discovery--->=============================================================================

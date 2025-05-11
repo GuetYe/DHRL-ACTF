@@ -1,0 +1,24 @@
+# 计算错包率
+                rx_err = self.port_stats_table[(src_dpid, src_port)][-1][2] # rx_err_bytes 
+                rx = self.port_stats_table[(dst_dpid, dst_port)][-1][1]  # rx_bytes
+                pkt_err = (rx_err/rx) * 100
+                self._save_stats(self.port_pkt_err, link, pkt_err, 5)
+
+                # 计算弃包个数
+                tx_packets = self.port_stats_table[(src_dpid, src_port)][-1][-2] # tx_packets
+                rx_packets = self.port_stats_table[(dst_dpid, dst_port)][-1][-1]  # rx_packets
+                pkt_drop = abs(tx_packets - rx_packets)
+                self._save_stats(self.port_pkt_drop, link, pkt_drop, 5)
+
+
+# 计算错包率
+                rx_err = self.port_stats_table[(dst_dpid, dst_port)][-1][2] # rx_err_bytes 
+                rx = self.port_stats_table[(src_dpid, src_port)][-1][1]  # rx_bytes
+                pkt_err = (rx_err/rx) * 100
+                self._save_stats(self.port_pkt_err, link, pkt_err, 5)
+
+                # 计算弃包个数
+                tx_packets = self.port_stats_table[(dst_dpid, dst_port)][-1][-2] # tx_packets
+                rx_packets = self.port_stats_table[(src_dpid, src_port)][-1][-1]  # rx_packets
+                pkt_drop = abs(tx_packets - rx_packets)
+                self._save_stats(self.port_pkt_drop, link, pkt_drop, 5)

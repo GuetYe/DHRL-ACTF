@@ -1,0 +1,2767 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-p39559up because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 3 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 4 connected
+discovery---> AccessPoint: 2 connected
+monitor---->register datapath: 1000000000000006
+monitor---->register datapath: 1000000000000005
+monitor---->register datapath: 1000000000000001
+monitor---->register datapath: 1000000000000003
+monitor---->register datapath: 1000000000000004
+monitor---->register datapath: 1000000000000002
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.4039745330810547
+6 <---> 2 : 3.720998764038086
+4 <---> 3 : 3.465414047241211
+4 <---> 5 : 2.6292800903320312
+3 <---> 4 : 3.146648406982422
+3 <---> 6 : 2.943754196166992
+3 <---> 2 : 2.973318099975586
+1 <---> 5 : 3.3702850341796875
+1 <---> 2 : 3.2427310943603516
+5 <---> 2 : 3.0603408813476562
+5 <---> 4 : 2.9578208923339844
+5 <---> 1 : 3.294706344604492
+2 <---> 3 : 2.6149749755859375
+2 <---> 6 : 2.522706985473633
+2 <---> 1 : 2.505064010620117
+2 <---> 5 : 2.416372299194336
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0      263    20514        0
+0000000000000006        2      292    20015        0      292    20015        0
+0000000000000006        3      292    20015        0      292    20015        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        0        0        0      263    20514        0
+0000000000000004        2      292    20015        0      292    20015        0
+0000000000000004        3      292    20015        0      293    20075        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0      263    20514        0
+0000000000000003        2      292    20015        0      292    20015        0
+0000000000000003        3      292    20015        0      292    20015        0
+0000000000000003        4      292    20015        0      292    20015        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0      263    20514        0
+0000000000000001        2      292    20015        0      291    19945        0
+0000000000000001        3      292    20015        0      292    20015        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0      263    20514        0
+0000000000000002        2      291    19945        0      292    20015        0
+0000000000000002        3      292    20015        0      292    20015        0
+0000000000000002        4      292    20015        0      292    20015        0
+0000000000000002        5      292    20015        0      292    20015        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        0        0        0      263    20514        0
+0000000000000005        2      292    20015        0      292    20015        0
+0000000000000005        3      292    20015        0      292    20015        0
+0000000000000005        4      293    20075        0      292    20015        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.944469451904297
+6 <---> 2 : 4.148006439208984
+4 <---> 3 : 2.465486526489258
+4 <---> 5 : 3.752470016479492
+3 <---> 4 : 2.167940139770508
+3 <---> 6 : 2.301454544067383
+3 <---> 2 : 3.154277801513672
+1 <---> 5 : 3.0298233032226562
+1 <---> 2 : 3.6592483520507812
+5 <---> 2 : 2.4383068084716797
+5 <---> 4 : 2.9878616333007812
+5 <---> 1 : 3.0074119567871094
+2 <---> 3 : 2.507925033569336
+2 <---> 6 : 3.0412673950195312
+2 <---> 1 : 2.393960952758789
+2 <---> 5 : 2.6082992553710938
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.1585693359375
+6 <---> 2 : 3.3483505249023438
+4 <---> 3 : 2.9647350311279297
+4 <---> 5 : 2.5374889373779297
+3 <---> 4 : 3.7779808044433594
+3 <---> 6 : 3.177642822265625
+3 <---> 2 : 3.307342529296875
+1 <---> 5 : 3.745555877685547
+1 <---> 2 : 3.7081241607666016
+5 <---> 2 : 2.9938220977783203
+5 <---> 4 : 3.0829906463623047
+5 <---> 1 : 2.936124801635742
+2 <---> 3 : 4.37617301940918
+2 <---> 6 : 3.240346908569336
+2 <---> 1 : 3.216981887817383
+2 <---> 5 : 3.1974315643310547
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.5458335876464844
+6 <---> 2 : 4.276752471923828
+4 <---> 3 : 2.329111099243164
+4 <---> 5 : 2.297639846801758
+3 <---> 4 : 2.9604434967041016
+3 <---> 6 : 2.9942989349365234
+3 <---> 2 : 3.044605255126953
+1 <---> 5 : 3.7376880645751953
+1 <---> 2 : 2.6483535766601562
+5 <---> 2 : 2.621889114379883
+5 <---> 4 : 2.7527809143066406
+5 <---> 1 : 2.666473388671875
+2 <---> 3 : 3.6611557006835938
+2 <---> 6 : 2.3338794708251953
+2 <---> 1 : 3.027200698852539
+2 <---> 5 : 3.015756607055664
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0      272    21216        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        0        0        0      272    21216        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        0        0        0      272    21216        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0      271    21138        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0      272    21216        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0      272    21216        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.389669418334961
+6 <---> 2 : 2.4178028106689453
+4 <---> 3 : 2.8676986694335938
+4 <---> 5 : 2.471446990966797
+3 <---> 4 : 2.291440963745117
+3 <---> 6 : 3.8695335388183594
+3 <---> 2 : 3.2529830932617188
+1 <---> 5 : 3.323793411254883
+1 <---> 2 : 2.6035308837890625
+5 <---> 2 : 3.574848175048828
+5 <---> 4 : 3.429889678955078
+5 <---> 1 : 4.157781600952148
+2 <---> 3 : 2.9664039611816406
+2 <---> 6 : 3.519773483276367
+2 <---> 1 : 3.6818981170654297
+2 <---> 5 : 2.445697784423828
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.6700496673583984
+6 <---> 2 : 5.611181259155273
+4 <---> 3 : 2.896547317504883
+4 <---> 5 : 2.7704238891601562
+3 <---> 4 : 3.1058788299560547
+3 <---> 6 : 2.5489330291748047
+3 <---> 2 : 2.9098987579345703
+1 <---> 5 : 3.544330596923828
+1 <---> 2 : 3.6613941192626953
+5 <---> 2 : 3.1936168670654297
+5 <---> 4 : 2.2246837615966797
+5 <---> 1 : 4.21142578125
+2 <---> 3 : 2.8848648071289062
+2 <---> 6 : 3.6089420318603516
+2 <---> 1 : 2.758502960205078
+2 <---> 5 : 2.5658607482910156
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.7937889099121094
+6 <---> 2 : 2.506256103515625
+4 <---> 3 : 3.489971160888672
+4 <---> 5 : 3.0171871185302734
+3 <---> 4 : 2.9289722442626953
+3 <---> 6 : 2.7570724487304688
+3 <---> 2 : 2.748250961303711
+1 <---> 5 : 3.5219192504882812
+1 <---> 2 : 2.5634765625
+5 <---> 2 : 3.2646656036376953
+5 <---> 4 : 2.8579235076904297
+5 <---> 1 : 2.6824474334716797
+2 <---> 3 : 3.016233444213867
+2 <---> 6 : 2.9146671295166016
+2 <---> 1 : 2.9709339141845703
+2 <---> 5 : 2.976655960083008
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0      281    21918        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0      281    21918        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        0        0        0      280    21840        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0      280    21840        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        0        0        0      281    21918        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0      281    21918        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.3538341522216797
+6 <---> 2 : 3.1969547271728516
+4 <---> 3 : 3.2494068145751953
+4 <---> 5 : 3.069639205932617
+3 <---> 4 : 3.1769275665283203
+3 <---> 6 : 3.460407257080078
+3 <---> 2 : 3.1533241271972656
+1 <---> 5 : 2.6454925537109375
+1 <---> 2 : 2.936124801635742
+5 <---> 2 : 2.8700828552246094
+5 <---> 4 : 2.8073787689208984
+5 <---> 1 : 3.588438034057617
+2 <---> 3 : 3.6072731018066406
+2 <---> 6 : 3.612041473388672
+2 <---> 1 : 3.752470016479492
+2 <---> 5 : 3.2553672790527344
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.7015209197998047
+6 <---> 2 : 2.8548240661621094
+4 <---> 3 : 2.5963783264160156
+4 <---> 5 : 3.6468505859375
+3 <---> 4 : 3.620624542236328
+3 <---> 6 : 3.7963390350341797
+3 <---> 2 : 2.4797916412353516
+1 <---> 5 : 2.6903152465820312
+1 <---> 2 : 3.3864974975585938
+5 <---> 2 : 3.2434463500976562
+5 <---> 4 : 3.1676292419433594
+5 <---> 1 : 3.2491683959960938
+2 <---> 3 : 4.244327545166016
+2 <---> 6 : 3.2930374145507812
+2 <---> 1 : 2.817869186401367
+2 <---> 5 : 2.8536319732666016
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.989530563354492
+6 <---> 2 : 4.582881927490234
+4 <---> 3 : 2.864837646484375
+4 <---> 5 : 2.783060073852539
+3 <---> 4 : 3.0565261840820312
+3 <---> 6 : 2.644062042236328
+3 <---> 2 : 3.4406185150146484
+1 <---> 5 : 2.398967742919922
+1 <---> 2 : 2.9115676879882812
+5 <---> 2 : 2.763032913208008
+5 <---> 4 : 2.9354095458984375
+5 <---> 1 : 3.0126571655273438
+2 <---> 3 : 2.2966861724853516
+2 <---> 6 : 2.285480499267578
+2 <---> 1 : 2.4111270904541016
+2 <---> 5 : 2.7942657470703125
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        0        0        0      290    22620        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0      290    22620        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0      290    22620        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0      289    22542        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        0        0        0      289    22542        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0      290    22620        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.3953189849853516
+6 <---> 2 : 2.8748512268066406
+4 <---> 3 : 2.95257568359375
+4 <---> 5 : 3.702402114868164
+3 <---> 4 : 2.4831295013427734
+3 <---> 6 : 2.4902820587158203
+3 <---> 2 : 2.3882389068603516
+1 <---> 5 : 2.4826526641845703
+1 <---> 2 : 2.6082992553710938
+5 <---> 2 : 2.403736114501953
+5 <---> 4 : 2.2039413452148438
+5 <---> 1 : 2.4607181549072266
+2 <---> 3 : 3.332376480102539
+2 <---> 6 : 2.4652481079101562
+2 <---> 1 : 2.8357505798339844
+2 <---> 5 : 3.414630889892578
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.253459930419922
+6 <---> 2 : 3.18145751953125
+4 <---> 3 : 2.898693084716797
+4 <---> 5 : 3.3822059631347656
+3 <---> 4 : 2.6412010192871094
+3 <---> 6 : 2.6917457580566406
+3 <---> 2 : 3.699064254760742
+1 <---> 5 : 3.011941909790039
+1 <---> 2 : 3.04412841796875
+5 <---> 2 : 3.249645233154297
+5 <---> 4 : 3.2401084899902344
+5 <---> 1 : 3.446817398071289
+2 <---> 3 : 2.260446548461914
+2 <---> 6 : 2.249479293823242
+2 <---> 1 : 3.0374526977539062
+2 <---> 5 : 3.5207271575927734
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.000497817993164
+6 <---> 2 : 2.856731414794922
+4 <---> 3 : 3.077268600463867
+4 <---> 5 : 2.9900074005126953
+3 <---> 4 : 2.765655517578125
+3 <---> 6 : 2.8765201568603516
+3 <---> 2 : 2.3365020751953125
+1 <---> 5 : 2.385854721069336
+1 <---> 2 : 2.8579235076904297
+5 <---> 2 : 3.2782554626464844
+5 <---> 4 : 2.7992725372314453
+5 <---> 1 : 2.857208251953125
+2 <---> 3 : 2.999544143676758
+2 <---> 6 : 3.1900405883789062
+2 <---> 1 : 3.0927658081054688
+2 <---> 5 : 2.6988983154296875
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0      298    23244        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0      299    23322        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        0        0        0      298    23244        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0      298    23244        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        0        0        0      299    23322        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0      299    23322        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.8901100158691406
+6 <---> 2 : 2.7093887329101562
+4 <---> 3 : 2.5353431701660156
+4 <---> 5 : 2.8076171875
+3 <---> 4 : 2.7709007263183594
+3 <---> 6 : 2.384185791015625
+3 <---> 2 : 3.434896469116211
+1 <---> 5 : 2.663850784301758
+1 <---> 2 : 2.727031707763672
+5 <---> 2 : 2.6979446411132812
+5 <---> 4 : 2.241849899291992
+5 <---> 1 : 2.374887466430664
+2 <---> 3 : 3.477811813354492
+2 <---> 6 : 2.9723644256591797
+2 <---> 1 : 3.5240650177001953
+2 <---> 5 : 2.6798248291015625
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.263784408569336
+6 <---> 2 : 2.509593963623047
+4 <---> 3 : 4.816293716430664
+4 <---> 5 : 2.820730209350586
+3 <---> 4 : 3.444194793701172
+3 <---> 6 : 2.5720596313476562
+3 <---> 2 : 2.761363983154297
+1 <---> 5 : 2.7866363525390625
+1 <---> 2 : 3.162860870361328
+5 <---> 2 : 3.2014846801757812
+5 <---> 4 : 2.3250579833984375
+5 <---> 1 : 3.384828567504883
+2 <---> 3 : 2.9501914978027344
+2 <---> 6 : 2.568960189819336
+2 <---> 1 : 2.301454544067383
+2 <---> 5 : 2.5484561920166016
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.6897659301757812
+6 <---> 2 : 2.9144287109375
+4 <---> 3 : 3.2851696014404297
+4 <---> 5 : 2.9828548431396484
+3 <---> 4 : 2.2063255310058594
+3 <---> 6 : 2.5708675384521484
+3 <---> 2 : 2.8116703033447266
+1 <---> 5 : 2.528667449951172
+1 <---> 2 : 4.004716873168945
+5 <---> 2 : 2.2819042205810547
+5 <---> 4 : 2.3179054260253906
+5 <---> 1 : 2.5861263275146484
+2 <---> 3 : 2.6481151580810547
+2 <---> 6 : 2.2177696228027344
+2 <---> 1 : 3.4699440002441406
+2 <---> 5 : 4.335880279541016
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        0        0        0      308    24024        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1        0        0        0      308    24024        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0      307    23946        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        0        0        0      307    23946        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0      308    24024        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0      307    23946        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.5903453826904297
+6 <---> 2 : 4.624128341674805
+4 <---> 3 : 2.910614013671875
+4 <---> 5 : 2.8913021087646484
+3 <---> 4 : 3.2548904418945312
+3 <---> 6 : 2.881288528442383
+3 <---> 2 : 3.8373470306396484
+1 <---> 5 : 2.386331558227539
+1 <---> 2 : 2.3212432861328125
+5 <---> 2 : 2.6013851165771484
+5 <---> 4 : 2.3839473724365234
+5 <---> 1 : 3.443479537963867
+2 <---> 3 : 2.861499786376953
+2 <---> 6 : 2.256631851196289
+2 <---> 1 : 2.7637481689453125
+2 <---> 5 : 2.195596694946289
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.122091293334961
+6 <---> 2 : 2.819538116455078
+4 <---> 3 : 3.392934799194336
+4 <---> 5 : 4.040718078613281
+3 <---> 4 : 2.5396347045898438
+3 <---> 6 : 3.175020217895508
+3 <---> 2 : 3.488302230834961
+1 <---> 5 : 2.7887821197509766
+1 <---> 2 : 2.3872852325439453
+5 <---> 2 : 3.880739212036133
+5 <---> 4 : 3.28826904296875
+5 <---> 1 : 5.148410797119141
+2 <---> 3 : 2.289295196533203
+2 <---> 6 : 3.294229507446289
+2 <---> 1 : 2.3543834686279297
+2 <---> 5 : 3.313779830932617
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+shortest=====>[PATH] [192.168.0.1 <----> 192.168.0.2]: [1, 2]
+shortest=====>[PATH] [192.168.0.1 <----> 192.168.0.3]: [1, 2, 3]
+shortest=====>[PATH] [192.168.0.1 <----> 192.168.0.4]: [1, 2, 3, 4]
+shortest=====>[PATH] [192.168.0.1 <----> 192.168.0.5]: [1, 5]
+shortest=====>[PATH] [192.168.0.1 <----> 192.168.0.6]: [1, 2, 6]
+shortest=====>[PATH] [192.168.0.2 <----> 192.168.0.3]: [2, 3]
+shortest=====>[PATH] [192.168.0.2 <----> 192.168.0.4]: [2, 3, 4]
+shortest=====>[PATH] [192.168.0.2 <----> 192.168.0.5]: [2, 5]
+shortest=====>[PATH] [192.168.0.2 <----> 192.168.0.6]: [2, 6]
+shortest=====>[PATH] [192.168.0.3 <----> 192.168.0.4]: [3, 4]
+shortest=====>[PATH] [192.168.0.3 <----> 192.168.0.5]: [3, 2, 5]
+shortest=====>[PATH] [192.168.0.3 <----> 192.168.0.6]: [3, 6]
+shortest=====>[PATH] [192.168.0.4 <----> 192.168.0.5]: [4, 5]
+shortest=====>[PATH] [192.168.0.4 <----> 192.168.0.6]: [4, 3, 6]
+shortest=====>[PATH] [192.168.0.5 <----> 192.168.0.6]: [5, 2, 6]
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.3686885833740234
+6 <---> 2 : 4.641294479370117
+4 <---> 3 : 2.697467803955078
+4 <---> 5 : 2.543926239013672
+3 <---> 4 : 4.402399063110352
+3 <---> 6 : 3.863096237182617
+3 <---> 2 : 3.003835678100586
+1 <---> 5 : 2.899646759033203
+1 <---> 2 : 2.8028488159179688
+5 <---> 2 : 2.5200843811035156
+5 <---> 4 : 3.1218528747558594
+5 <---> 1 : 3.0286312103271484
+2 <---> 3 : 2.8574466705322266
+2 <---> 6 : 2.9823780059814453
+2 <---> 1 : 3.3707618713378906
+2 <---> 5 : 2.6035308837890625
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       19     1358        0      349    27278        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+0000000000000006        1       192.168.0.2        2        2      196
+0000000000000006        1       192.168.0.3        3        2      196
+0000000000000006        1       192.168.0.4        3        2      196
+0000000000000006        1       192.168.0.5        2        2      196
+0000000000000006        2       192.168.0.6        1        2      196
+0000000000000006        2       192.168.0.6        1        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       20     1400        0      345    27038        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       20     1400        0      340    26720        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      361    28052        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      344    26960        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       17     1274        0      339    26660        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.8541088104248047
+6 <---> 2 : 2.9020309448242188
+4 <---> 3 : 2.346515655517578
+4 <---> 5 : 2.534151077270508
+3 <---> 4 : 2.5186538696289062
+3 <---> 6 : 2.616405487060547
+3 <---> 2 : 2.340078353881836
+1 <---> 5 : 2.2089481353759766
+1 <---> 2 : 2.192974090576172
+5 <---> 2 : 2.319812774658203
+5 <---> 4 : 2.8085708618164062
+5 <---> 1 : 2.3179054260253906
+2 <---> 3 : 2.3267269134521484
+2 <---> 6 : 2.3834705352783203
+2 <---> 1 : 2.6710033416748047
+2 <---> 5 : 3.3500194549560547
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.6674270629882812
+6 <---> 2 : 2.7496814727783203
+4 <---> 3 : 4.472255706787109
+4 <---> 5 : 3.3805370330810547
+3 <---> 4 : 3.165721893310547
+3 <---> 6 : 3.102540969848633
+3 <---> 2 : 6.515741348266602
+1 <---> 5 : 2.785921096801758
+1 <---> 2 : 3.1311511993408203
+5 <---> 2 : 3.8270950317382812
+5 <---> 4 : 2.784252166748047
+5 <---> 1 : 3.1995773315429688
+2 <---> 3 : 3.9451122283935547
+2 <---> 6 : 2.825498580932617
+2 <---> 1 : 3.312349319458008
+2 <---> 5 : 2.720355987548828
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.5715103149414062
+6 <---> 2 : 3.8099288940429688
+4 <---> 3 : 3.8042068481445312
+4 <---> 5 : 2.7866363525390625
+3 <---> 4 : 2.774477005004883
+3 <---> 6 : 2.9757022857666016
+3 <---> 2 : 2.7561187744140625
+1 <---> 5 : 3.4062862396240234
+1 <---> 2 : 3.2744407653808594
+5 <---> 2 : 3.4117698669433594
+5 <---> 4 : 2.607107162475586
+5 <---> 1 : 4.718542098999023
+2 <---> 3 : 5.076885223388672
+2 <---> 6 : 2.3963451385498047
+2 <---> 1 : 2.424955368041992
+2 <---> 5 : 3.2379627227783203
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       21     1442        0      355    27818        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       20     1400        0      359    28058        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       21     1442        0      350    27500        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       17     1274        0      354    27740        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      370    28754        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       18     1316        0      349    27440        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.7610530853271484
+6 <---> 2 : 2.374887466430664
+4 <---> 3 : 2.796173095703125
+4 <---> 5 : 3.206968307495117
+3 <---> 4 : 3.4956932067871094
+3 <---> 6 : 3.748178482055664
+3 <---> 2 : 2.403736114501953
+1 <---> 5 : 2.6311874389648438
+1 <---> 2 : 2.6443004608154297
+5 <---> 2 : 3.2253265380859375
+5 <---> 4 : 4.443883895874023
+5 <---> 1 : 2.8123855590820312
+2 <---> 3 : 2.7823448181152344
+2 <---> 6 : 4.253387451171875
+2 <---> 1 : 3.150463104248047
+2 <---> 5 : 4.089117050170898
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.5568008422851562
+6 <---> 2 : 3.4303665161132812
+4 <---> 3 : 3.2465457916259766
+4 <---> 5 : 2.9087066650390625
+3 <---> 4 : 2.9387474060058594
+3 <---> 6 : 3.4444332122802734
+3 <---> 2 : 2.5277137756347656
+1 <---> 5 : 3.425121307373047
+1 <---> 2 : 2.9146671295166016
+5 <---> 2 : 2.922534942626953
+5 <---> 4 : 2.4874210357666016
+5 <---> 1 : 4.211664199829102
+2 <---> 3 : 3.817319869995117
+2 <---> 6 : 2.4309158325195312
+2 <---> 1 : 4.046201705932617
+2 <---> 5 : 2.803802490234375
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.7305355072021484
+6 <---> 2 : 3.2079219818115234
+4 <---> 3 : 3.360271453857422
+4 <---> 5 : 2.988100051879883
+3 <---> 4 : 2.4688243865966797
+3 <---> 6 : 3.1697750091552734
+3 <---> 2 : 4.68134880065918
+1 <---> 5 : 3.681182861328125
+1 <---> 2 : 3.076791763305664
+5 <---> 2 : 3.2024383544921875
+5 <---> 4 : 4.534482955932617
+5 <---> 1 : 2.1986961364746094
+2 <---> 3 : 2.3450851440429688
+2 <---> 6 : 2.493143081665039
+2 <---> 1 : 2.215862274169922
+2 <---> 5 : 5.012750625610352
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       21     1442        0      359    28202        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       20     1400        0      368    28760        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       21     1442        0      363    28442        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       17     1274        0      363    28442        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       18     1316        0      358    28142        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      379    29456        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.8777122497558594
+6 <---> 2 : 4.490375518798828
+4 <---> 3 : 4.887580871582031
+4 <---> 5 : 3.0527114868164062
+3 <---> 4 : 3.1998157501220703
+3 <---> 6 : 3.5800933837890625
+3 <---> 2 : 3.035306930541992
+1 <---> 5 : 4.046440124511719
+1 <---> 2 : 2.765655517578125
+5 <---> 2 : 4.49681282043457
+5 <---> 4 : 2.605915069580078
+5 <---> 1 : 3.349781036376953
+2 <---> 3 : 3.7970542907714844
+2 <---> 6 : 3.6275386810302734
+2 <---> 1 : 3.6916732788085938
+2 <---> 5 : 3.796815872192383
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.048419952392578
+6 <---> 2 : 2.2814273834228516
+4 <---> 3 : 2.594470977783203
+4 <---> 5 : 2.241373062133789
+3 <---> 4 : 2.3331642150878906
+3 <---> 6 : 2.803325653076172
+3 <---> 2 : 2.609729766845703
+1 <---> 5 : 2.573728561401367
+1 <---> 2 : 3.595113754272461
+5 <---> 2 : 3.256559371948242
+5 <---> 4 : 3.873586654663086
+5 <---> 1 : 4.319906234741211
+2 <---> 3 : 3.0961036682128906
+2 <---> 6 : 2.804279327392578
+2 <---> 1 : 3.017902374267578
+2 <---> 5 : 3.2820701599121094
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.317190170288086
+6 <---> 2 : 2.6764869689941406
+4 <---> 3 : 2.9261112213134766
+4 <---> 5 : 2.6853084564208984
+3 <---> 4 : 2.4526119232177734
+3 <---> 6 : 2.4335384368896484
+3 <---> 2 : 4.122018814086914
+1 <---> 5 : 2.651214599609375
+1 <---> 2 : 3.7736892700195312
+5 <---> 2 : 2.5289058685302734
+5 <---> 4 : 3.2498836517333984
+5 <---> 1 : 2.5043487548828125
+2 <---> 3 : 2.2182464599609375
+2 <---> 6 : 3.318309783935547
+2 <---> 1 : 2.269744873046875
+2 <---> 5 : 2.4492740631103516
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       21     1442        0      372    29144        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       20     1400        0      377    29462        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       18     1316        0      367    28844        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       21     1442        0      368    28904        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       17     1274        0      372    29144        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      388    30158        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    value[-2][2], value[-2][3])
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.4924278259277344
+6 <---> 2 : 2.6984214782714844
+4 <---> 3 : 2.333402633666992
+4 <---> 5 : 13.37289810180664
+3 <---> 4 : 3.2341480255126953
+3 <---> 6 : 3.1256675720214844
+3 <---> 2 : 4.073619842529297
+1 <---> 5 : 2.7773380279541016
+1 <---> 2 : 3.0100345611572266
+5 <---> 2 : 3.0660629272460938
+5 <---> 4 : 3.2203197479248047
+5 <---> 1 : 3.142118453979492
+2 <---> 3 : 3.04412841796875
+2 <---> 6 : 2.7000904083251953
+2 <---> 1 : 3.6067962646484375
+2 <---> 5 : 2.6388168334960938
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.4432411193847656
+6 <---> 2 : 2.661466598510742
+4 <---> 3 : 2.6526451110839844
+4 <---> 5 : 2.6929378509521484
+3 <---> 4 : 2.917051315307617
+3 <---> 6 : 2.5167465209960938
+3 <---> 2 : 3.8607120513916016
+1 <---> 5 : 2.336740493774414
+1 <---> 2 : 2.521991729736328
+5 <---> 2 : 3.3524036407470703
+5 <---> 4 : 2.87628173828125
+5 <---> 1 : 2.7158260345458984
+2 <---> 3 : 2.959012985229492
+2 <---> 6 : 3.277301788330078
+2 <---> 1 : 2.950906753540039
+2 <---> 5 : 3.4432411193847656
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.13568115234375
+6 <---> 2 : 2.7666091918945312
+4 <---> 3 : 3.1023025512695312
+4 <---> 5 : 2.38800048828125
+3 <---> 4 : 2.6788711547851562
+3 <---> 6 : 3.2701492309570312
+3 <---> 2 : 3.307819366455078
+1 <---> 5 : 3.3004283905029297
+1 <---> 2 : 3.946542739868164
+5 <---> 2 : 3.5963058471679688
+5 <---> 4 : 2.2034645080566406
+5 <---> 1 : 2.5124549865722656
+2 <---> 3 : 2.636432647705078
+2 <---> 6 : 2.572298049926758
+2 <---> 1 : 2.2916793823242188
+2 <---> 5 : 3.248929977416992
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       21     1442        0      381    29846        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       20     1400        0      385    30086        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       21     1442        0      377    29606        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       17     1274        0      381    29846        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       18     1316        0      376    29546        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      397    30860        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.859830856323242
+6 <---> 2 : 2.785205841064453
+4 <---> 3 : 2.41851806640625
+4 <---> 5 : 2.1860599517822266
+3 <---> 4 : 2.870321273803711
+3 <---> 6 : 2.8297901153564453
+3 <---> 2 : 2.630472183227539
+1 <---> 5 : 4.894733428955078
+1 <---> 2 : 2.6788711547851562
+5 <---> 2 : 3.925323486328125
+5 <---> 4 : 2.2711753845214844
+5 <---> 1 : 2.7799606323242188
+2 <---> 3 : 2.382993698120117
+2 <---> 6 : 4.400491714477539
+2 <---> 1 : 2.568483352661133
+2 <---> 5 : 3.0057430267333984
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.7914047241210938
+6 <---> 2 : 2.7306079864501953
+4 <---> 3 : 2.754688262939453
+4 <---> 5 : 2.588510513305664
+3 <---> 4 : 4.636049270629883
+3 <---> 6 : 2.830028533935547
+3 <---> 2 : 2.6700496673583984
+1 <---> 5 : 3.241300582885742
+1 <---> 2 : 4.35185432434082
+5 <---> 2 : 2.6519298553466797
+5 <---> 4 : 2.3119449615478516
+5 <---> 1 : 2.716541290283203
+2 <---> 3 : 2.899646759033203
+2 <---> 6 : 2.771139144897461
+2 <---> 1 : 2.1436214447021484
+2 <---> 5 : 2.8905868530273438
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.7840137481689453
+6 <---> 2 : 2.6929378509521484
+4 <---> 3 : 3.4224987030029297
+4 <---> 5 : 3.206491470336914
+3 <---> 4 : 3.4477710723876953
+3 <---> 6 : 3.277301788330078
+3 <---> 2 : 3.017425537109375
+1 <---> 5 : 3.593921661376953
+1 <---> 2 : 3.5979747772216797
+5 <---> 2 : 2.4712085723876953
+5 <---> 4 : 2.3262500762939453
+5 <---> 1 : 2.57110595703125
+2 <---> 3 : 3.718137741088867
+2 <---> 6 : 2.3097991943359375
+2 <---> 1 : 2.7823448181152344
+2 <---> 5 : 3.221750259399414
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       21     1442        0      390    30548        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       20     1400        0      394    30788        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       21     1442        0      386    30308        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      406    31562        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       18     1316        0      385    30248        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       17     1274        0      390    30548        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.8853416442871094
+6 <---> 2 : 2.4101734161376953
+4 <---> 3 : 3.525257110595703
+4 <---> 5 : 2.4099349975585938
+3 <---> 4 : 2.718210220336914
+3 <---> 6 : 2.9196739196777344
+3 <---> 2 : 3.014802932739258
+1 <---> 5 : 2.259492874145508
+1 <---> 2 : 2.408742904663086
+5 <---> 2 : 4.132747650146484
+5 <---> 4 : 3.2193660736083984
+5 <---> 1 : 3.1709671020507812
+2 <---> 3 : 4.17637825012207
+2 <---> 6 : 2.5038719177246094
+2 <---> 1 : 2.9158592224121094
+2 <---> 5 : 2.9888153076171875
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.5632381439208984
+6 <---> 2 : 2.5191307067871094
+4 <---> 3 : 2.717733383178711
+4 <---> 5 : 3.6194324493408203
+3 <---> 4 : 3.025054931640625
+3 <---> 6 : 3.4210681915283203
+3 <---> 2 : 3.33404541015625
+1 <---> 5 : 3.3686161041259766
+1 <---> 2 : 2.9125213623046875
+5 <---> 2 : 2.1867752075195312
+5 <---> 4 : 2.4814605712890625
+5 <---> 1 : 2.9222965240478516
+2 <---> 3 : 3.252267837524414
+2 <---> 6 : 2.2325515747070312
+2 <---> 1 : 2.4094581604003906
+2 <---> 5 : 2.8066635131835938
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.4871826171875
+6 <---> 2 : 2.488374710083008
+4 <---> 3 : 2.198457717895508
+4 <---> 5 : 3.476858139038086
+3 <---> 4 : 2.816438674926758
+3 <---> 6 : 3.2401084899902344
+3 <---> 2 : 3.319263458251953
+1 <---> 5 : 2.549409866333008
+1 <---> 2 : 2.4335384368896484
+5 <---> 2 : 3.194570541381836
+5 <---> 4 : 2.4902820587158203
+5 <---> 1 : 3.5376548767089844
+2 <---> 3 : 2.978086471557617
+2 <---> 6 : 2.841472625732422
+2 <---> 1 : 3.171682357788086
+2 <---> 5 : 3.026247024536133
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      415    32264        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       17     1274        0      399    31250        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       18     1316        0      394    30950        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       21     1442        0      399    31250        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       20     1400        0      403    31490        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       21     1442        0      395    31010        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.1593570709228516
+6 <---> 2 : 2.2430419921875
+4 <---> 3 : 2.4471282958984375
+4 <---> 5 : 4.682779312133789
+3 <---> 4 : 2.695322036743164
+3 <---> 6 : 2.665996551513672
+3 <---> 2 : 2.649068832397461
+1 <---> 5 : 2.22015380859375
+1 <---> 2 : 3.113269805908203
+5 <---> 2 : 3.322601318359375
+5 <---> 4 : 2.9768943786621094
+5 <---> 1 : 2.9087066650390625
+2 <---> 3 : 2.887725830078125
+2 <---> 6 : 3.108501434326172
+2 <---> 1 : 2.608776092529297
+2 <---> 5 : 2.5513172149658203
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.6421546936035156
+6 <---> 2 : 3.4911632537841797
+4 <---> 3 : 3.7925243377685547
+4 <---> 5 : 3.7047863006591797
+3 <---> 4 : 3.16619873046875
+3 <---> 6 : 3.2563209533691406
+3 <---> 2 : 3.1108856201171875
+1 <---> 5 : 2.7039051055908203
+1 <---> 2 : 3.7593841552734375
+5 <---> 2 : 2.811431884765625
+5 <---> 4 : 2.1839141845703125
+5 <---> 1 : 2.5811195373535156
+2 <---> 3 : 2.3136138916015625
+2 <---> 6 : 3.693103790283203
+2 <---> 1 : 2.6407241821289062
+2 <---> 5 : 3.444671630859375
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.437042236328125
+6 <---> 2 : 3.165006637573242
+4 <---> 3 : 3.445148468017578
+4 <---> 5 : 3.15093994140625
+3 <---> 4 : 4.234790802001953
+3 <---> 6 : 2.3403167724609375
+3 <---> 2 : 2.9282569885253906
+1 <---> 5 : 2.9969215393066406
+1 <---> 2 : 2.6178359985351562
+5 <---> 2 : 2.699136734008789
+5 <---> 4 : 3.434896469116211
+5 <---> 1 : 3.862142562866211
+2 <---> 3 : 2.9599666595458984
+2 <---> 6 : 3.428936004638672
+2 <---> 1 : 2.934694290161133
+2 <---> 5 : 3.0698776245117188
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       21     1442        0      408    31952        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       20     1400        0      412    32192        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      424    32966        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       17     1274        0      408    31952        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       21     1442        0      404    31712        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       18     1316        0      403    31652        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.665996551513672
+6 <---> 2 : 4.148006439208984
+4 <---> 3 : 2.671957015991211
+4 <---> 5 : 3.416776657104492
+3 <---> 4 : 4.492521286010742
+3 <---> 6 : 2.489805221557617
+3 <---> 2 : 3.131866455078125
+1 <---> 5 : 2.4733543395996094
+1 <---> 2 : 2.857685089111328
+5 <---> 2 : 3.658294677734375
+5 <---> 4 : 2.2542476654052734
+5 <---> 1 : 3.027677536010742
+2 <---> 3 : 2.963542938232422
+2 <---> 6 : 2.800464630126953
+2 <---> 1 : 2.8009414672851562
+2 <---> 5 : 2.3069381713867188
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 4.236698150634766
+6 <---> 2 : 2.9892921447753906
+4 <---> 3 : 2.676725387573242
+4 <---> 5 : 2.7625560760498047
+3 <---> 4 : 3.3364295959472656
+3 <---> 6 : 2.325773239135742
+3 <---> 2 : 3.3915042877197266
+1 <---> 5 : 2.3064613342285156
+1 <---> 2 : 2.8350353240966797
+5 <---> 2 : 3.395557403564453
+5 <---> 4 : 2.917051315307617
+5 <---> 1 : 3.669261932373047
+2 <---> 3 : 3.709077835083008
+2 <---> 6 : 2.8181076049804688
+2 <---> 1 : 2.8581619262695312
+2 <---> 5 : 2.6412010192871094
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.149271011352539
+6 <---> 2 : 2.524137496948242
+4 <---> 3 : 2.3615360260009766
+4 <---> 5 : 2.3462772369384766
+3 <---> 4 : 3.121614456176758
+3 <---> 6 : 4.141807556152344
+3 <---> 2 : 2.8772354125976562
+1 <---> 5 : 2.630472183227539
+1 <---> 2 : 2.756357192993164
+5 <---> 2 : 3.422260284423828
+5 <---> 4 : 3.0913352966308594
+5 <---> 1 : 2.6102066040039062
+2 <---> 3 : 3.148317337036133
+2 <---> 6 : 4.401445388793945
+2 <---> 1 : 2.9778480529785156
+2 <---> 5 : 2.832174301147461
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       20     1400        0      421    32894        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       21     1442        0      417    32654        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       17     1274        0      417    32654        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      433    33668        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       18     1316        0      412    32354        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       21     1442        0      413    32414        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.2622814178466797
+6 <---> 2 : 3.154754638671875
+4 <---> 3 : 2.3605823516845703
+4 <---> 5 : 2.714395523071289
+3 <---> 4 : 2.5529861450195312
+3 <---> 6 : 2.5336742401123047
+3 <---> 2 : 2.9146671295166016
+1 <---> 5 : 2.8328895568847656
+1 <---> 2 : 2.797365188598633
+5 <---> 2 : 3.6613941192626953
+5 <---> 4 : 2.7899742126464844
+5 <---> 1 : 3.5517215728759766
+2 <---> 3 : 3.3578872680664062
+2 <---> 6 : 3.366708755493164
+2 <---> 1 : 2.914905548095703
+2 <---> 5 : 2.132415771484375
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.4072399139404297
+6 <---> 2 : 2.405405044555664
+4 <---> 3 : 3.5657882690429688
+4 <---> 5 : 3.416299819946289
+3 <---> 4 : 2.679586410522461
+3 <---> 6 : 3.745555877685547
+3 <---> 2 : 3.1769275665283203
+1 <---> 5 : 3.6194324493408203
+1 <---> 2 : 2.5517940521240234
+5 <---> 2 : 3.845691680908203
+5 <---> 4 : 3.4732818603515625
+5 <---> 1 : 2.531766891479492
+2 <---> 3 : 2.2232532501220703
+2 <---> 6 : 4.3392181396484375
+2 <---> 1 : 2.7925968170166016
+2 <---> 5 : 3.3979415893554688
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.8662681579589844
+6 <---> 2 : 3.186941146850586
+4 <---> 3 : 3.3729076385498047
+4 <---> 5 : 3.2596588134765625
+3 <---> 4 : 3.3452510833740234
+3 <---> 6 : 2.6366710662841797
+3 <---> 2 : 3.093242645263672
+1 <---> 5 : 2.510547637939453
+1 <---> 2 : 2.614736557006836
+5 <---> 2 : 2.9251575469970703
+5 <---> 4 : 2.385854721069336
+5 <---> 1 : 3.971099853515625
+2 <---> 3 : 3.347158432006836
+2 <---> 6 : 3.1838417053222656
+2 <---> 1 : 3.3249855041503906
+2 <---> 5 : 2.7081966400146484
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000006        1       20     1400        0      430    33596        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000006        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      442    34370        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       21     1442        0      422    33116        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       18     1316        0      421    33056        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       17     1274        0      426    33356        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       21     1442        0      426    33356        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 194, in port_stats_table_reply_handler
+    print("pre_bytes------>", pre_bytes)
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 248, in _flow_stats_reply_handler
+    speed = self._calculate_speed(self.flow_stats_table[dpid][key][-1][1], pre_bytes, delta_time)
+TypeError: _calculate_delta_time() missing 1 required positional argument: 'pre_nsec'
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 2.475738525390625
+6 <---> 2 : 2.939462661743164
+4 <---> 3 : 3.027677536010742
+4 <---> 5 : 2.378702163696289
+3 <---> 4 : 2.4788379669189453
+3 <---> 6 : 3.1960010528564453
+3 <---> 2 : 2.404451370239258
+1 <---> 5 : 3.6916732788085938
+1 <---> 2 : 3.4236907958984375
+5 <---> 2 : 2.8269290924072266
+5 <---> 4 : 3.4170150756835938
+5 <---> 1 : 2.6314258575439453
+2 <---> 3 : 3.0570030212402344
+2 <---> 6 : 2.7942657470703125
+2 <---> 1 : 3.0782222747802734
+2 <---> 5 : 3.496885299682617
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 3.219127655029297
+6 <---> 2 : 2.434968948364258
+4 <---> 3 : 3.2346248626708984
+4 <---> 5 : 2.8204917907714844
+3 <---> 4 : 2.84576416015625
+3 <---> 6 : 2.7534961700439453
+3 <---> 2 : 3.8604736328125
+1 <---> 5 : 2.6311874389648438
+1 <---> 2 : 2.8281211853027344
+5 <---> 2 : 2.672433853149414
+5 <---> 4 : 2.787351608276367
+5 <---> 1 : 2.863168716430664
+2 <---> 3 : 4.151582717895508
+2 <---> 6 : 2.4347305297851562
+2 <---> 1 : 3.696918487548828
+2 <---> 5 : 2.7952194213867188
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 3), (6, 2), (3, 4), (3, 2), (4, 5), (1, 5), (1, 2), (5, 2)]
+discovery--->=============================================================================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+6 <---> 3 : 4.012346267700195
+6 <---> 2 : 3.917694091796875
+4 <---> 3 : 3.5562515258789062
+4 <---> 5 : 3.3478736877441406
+3 <---> 4 : 3.165721893310547
+3 <---> 6 : 3.241300582885742
+3 <---> 2 : 3.0486583709716797
+1 <---> 5 : 2.9206275939941406
+1 <---> 2 : 2.750396728515625
+5 <---> 2 : 2.398252487182617
+5 <---> 4 : 2.9375553131103516
+5 <---> 1 : 2.7909278869628906
+2 <---> 3 : 2.946615219116211
+2 <---> 6 : 2.7544498443603516
+2 <---> 1 : 2.915620803833008
+2 <---> 5 : 2.4728775024414062

@@ -1,0 +1,75 @@
+loading app network_structure.py
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> switch: 1 connected
+discovery---> switch: 4 connected
+discovery---> switch: 5 connected
+discovery---> switch: 3 connected
+discovery---> switch: 2 connected
+monitor---->register datapath: 0000000000000001
+monitor---->register datapath: 0000000000000004
+monitor---->register datapath: 0000000000000005
+monitor---->register datapath: 0000000000000003
+monitor---->register datapath: 0000000000000002
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1, 3), (1, 4), (1, 2), (3, 5), (5, 4), (5, 2)]
+discovery--->==============================
+monitor---->===================================monitor=================================
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_shortest_path.py", line 70, in super_schedule
+    self.network_monitor.scheduler()
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_monitor.py", line 64, in scheduler
+    self.print_parameters()
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_monitor.py", line 52, in print_parameters
+    print("monitor\n----->self.port_free_bandwidth", self.port_free_bandwidth)
+AttributeError: 'NetworkMonitor' object has no attribute 'port_free_bandwidth'
+
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      360        0        5      300        0
+0000000000000001        2        6      360        0        5      300        0
+0000000000000001        3        6      360        0        6      360        0
+0000000000000001        4        9      746        0        5      300        0
+0000000000000001        5        9      746        0        6      360        0
+0000000000000001        6        9      746        0        5      300        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        6      360        0        6      360        0
+0000000000000004        2        5      300        0        6      360        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        5      300        0        6      360        0
+0000000000000003        2        5      300        0        6      360        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        6      360        0        5      300        0
+0000000000000005        2        6      360        0        5      300        0
+0000000000000005        3        6      360        0        5      300        0
+0000000000000005        4       11      922        0        5      300        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        5      300        0        6      360        0
+0000000000000002        2        5      300        0        6      360        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------

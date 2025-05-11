@@ -1,0 +1,1989 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-7n8xctiw because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 1000000000000006
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000004
+monitor---->register datapath: 1000000000000005
+monitor---->register datapath: 1000000000000002
+monitor---->register datapath: 1000000000000003
+monitor---->register datapath: 1000000000000001
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/Task/ryu/network_delay.py", line 46, in scheduler
+    self.create_delay_graph()
+  File "/home/terry/LJQ/Task/ryu/network_delay.py", line 127, in create_delay_graph
+    delay = self.calculate_delay(src, dst)
+  File "/home/terry/LJQ/Task/ryu/network_delay.py", line 143, in calculate_delay
+    ryu_ofps_src_delay = self.echo_delay_table[src]
+KeyError: 6
+
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      358    28106        0
+0000000000000004        2      379    25413        0      376    25233        0
+0000000000000004        3      372    24765        0      373    24825        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 202, in port_stats_table_reply_handler
+    self.create_loss_of_link()
+AttributeError: 'NetworkMonitor' object has no attribute 'create_loss_of_link'
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      377    29408        0
+0000000000000001        2      380    25473        0      378    25353        0
+0000000000000001        3      371    24705        0      372    24765        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 202, in port_stats_table_reply_handler
+    self.create_loss_of_link()
+AttributeError: 'NetworkMonitor' object has no attribute 'create_loss_of_link'
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      358    28124        0
+0000000000000003        2      379    25489        0      381    25609        0
+0000000000000003        3      376    25233        0      379    25413        0
+0000000000000003        4      375    25021        0      374    24961        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 202, in port_stats_table_reply_handler
+    self.create_loss_of_link()
+AttributeError: 'NetworkMonitor' object has no attribute 'create_loss_of_link'
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      357    28046        0
+0000000000000005        2      372    24765        0      371    24705        0
+0000000000000005        3      377    25217        0      376    25157        0
+0000000000000005        4      373    24825        0      372    24765        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 202, in port_stats_table_reply_handler
+    self.create_loss_of_link()
+AttributeError: 'NetworkMonitor' object has no attribute 'create_loss_of_link'
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      354    27866        0
+0000000000000002        2      378    25353        0      380    25473        0
+0000000000000002        3      381    25609        0      379    25489        0
+0000000000000002        4      376    25157        0      377    25217        0
+0000000000000002        5      375    25097        0      376    25157        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 202, in port_stats_table_reply_handler
+    self.create_loss_of_link()
+AttributeError: 'NetworkMonitor' object has no attribute 'create_loss_of_link'
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      362    28418        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      362    28436        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      362    28436        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      359    28256        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      381    29720        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      386    30110        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      367    28808        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      366    28748        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      367    28826        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      363    28568        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      371    29120        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      370    29060        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      390    30422        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      368    28958        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      371    29138        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      376    29510        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      376    29528        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      375    29450        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      372    29270        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      395    30812        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      377    29660        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      379    29762        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      380    29840        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      399    31124        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      380    29822        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      381    29972        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      385    30212        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      385    30230        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      404    31514        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      384    30152        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      389    30524        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      408    31826        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      385    30284        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      388    30464        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      389    30542        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      394    30914        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      413    32216        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      393    30854        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      390    30674        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      394    30932        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      417    32528        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      398    31226        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      398    31244        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      397    31166        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      394    30986        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      402    31556        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      402    31556        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      399    31376        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      422    32918        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      403    31616        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      407    31928        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      403    31688        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      407    31946        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      426    33230        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      406    31868        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      408    32078        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      412    32318        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      411    32258        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      411    32258        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      430    33542        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      416    32630        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      435    33932        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      416    32648        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      412    32390        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      415    32570        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       18     1316        0      417    32780        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000002        1       192.168.0.1        2        2      196
+0000000000000002        1       192.168.0.3        3        1       98
+0000000000000002        1       192.168.0.4        3        1       98
+0000000000000002        1       192.168.0.5        4        1       98
+0000000000000002        1       192.168.0.6        5        1       98
+0000000000000002        2       192.168.0.2        1        2      196
+0000000000000002        2       192.168.0.3        3        2      196
+0000000000000002        2       192.168.0.4        3        2      196
+0000000000000002        2       192.168.0.6        5        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.1        2        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.2        1        2      196
+0000000000000002        3       192.168.0.5        4        2      196
+0000000000000002        4       192.168.0.2        1        2      196
+0000000000000002        4       192.168.0.3        3        2      196
+0000000000000002        4       192.168.0.6        5        2      196
+0000000000000002        5       192.168.0.1        2        2      196
+0000000000000002        5       192.168.0.2        1        2      196
+0000000000000002        5       192.168.0.5        4        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       16     1232        0      420    32960        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000005        1       192.168.0.1        2        2      196
+0000000000000005        1       192.168.0.2        3        2      196
+0000000000000005        1       192.168.0.3        3        2      196
+0000000000000005        1       192.168.0.4        4        2      196
+0000000000000005        1       192.168.0.6        3        1       98
+0000000000000005        2       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        3       192.168.0.5        1        2      196
+0000000000000005        4       192.168.0.5        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       15     1190        0      439    34244        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        1       192.168.0.2        2        1       98
+0000000000000001        1       192.168.0.3        2        1       98
+0000000000000001        1       192.168.0.4        2        1       98
+0000000000000001        1       192.168.0.5        3        1       98
+0000000000000001        1       192.168.0.6        2        1       98
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        2       192.168.0.1        1        2      196
+0000000000000001        3       192.168.0.1        1        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       19     1358        0      420    32960        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000003        1       192.168.0.1        2        2      196
+0000000000000003        1       192.168.0.2        2        2      196
+0000000000000003        1       192.168.0.4        3        1       98
+0000000000000003        1       192.168.0.5        2        1       98
+0000000000000003        1       192.168.0.6        4        1       98
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.3        1        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        2       192.168.0.4        3        2      196
+0000000000000003        3       192.168.0.1        2        2      196
+0000000000000003        3       192.168.0.2        2        2      196
+0000000000000003        3       192.168.0.3        1        2      196
+0000000000000003        3       192.168.0.6        4        2      196
+0000000000000003        4       192.168.0.3        1        2      196
+0000000000000003        4       192.168.0.4        3        2      196
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       19     1358        0      420    32942        0
+monitor: Exception occurred during handler processing. Backtrace from offending handler [port_stats_table_reply_handler] servicing event [EventOFPPortStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 193, in port_stats_table_reply_handler
+    pre_bytes = stat[-2][0] + stat[-2][1]
+TypeError: 'int' object is not subscriptable
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000004        1       192.168.0.1        2        2      196
+0000000000000004        1       192.168.0.2        2        2      196
+0000000000000004        1       192.168.0.3        2        2      196
+0000000000000004        1       192.168.0.5        3        1       98
+0000000000000004        1       192.168.0.6        2        1       98
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        2       192.168.0.4        1        2      196
+0000000000000004        3       192.168.0.4        1        2      196
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(6, 2), (6, 3), (2, 5), (2, 1), (2, 3), (5, 1), (5, 4), (3, 4)]
+discovery--->=============================================================================

@@ -1,0 +1,65 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-t2dgfisb because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+monitor---->register datapath: 100000000000000b
+discovery---> AccessPoint: 2 connected
+monitor---->register datapath: 100000000000000c
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 100000000000000d
+discovery---> AccessPoint: 4 connected
+monitor---->register datapath: 100000000000000e
+discovery---> AccessPoint: 5 connected
+monitor---->register datapath: 100000000000000f
+discovery---> AccessPoint: 6 connected
+monitor---->register datapath: 1000000000000010
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code/network_delay.py", line 46, in scheduler
+    self._send_echo_request()
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code/network_delay.py", line 55, in _send_echo_request
+    for datapath in self.network_monitor.datapaths_table.values():
+RuntimeError: dictionary changed size during iteration
+
+discovery---> AccessPoint: 7 connected
+monitor---->register datapath: 1000000000000011
+discovery---> AccessPoint: 8 connected
+monitor---->register datapath: 1000000000000012
+discovery---> AccessPoint: 9 connected
+monitor---->register datapath: 1000000000000013
+discovery---> AccessPoint: 10 connected
+monitor---->register datapath: 1000000000000014
+discovery---> AccessPoint: 11 connected
+monitor---->register datapath: 1000000000000015
+discovery---> AccessPoint: 12 connected
+monitor---->register datapath: 1000000000000016
+discovery---> AccessPoint: 13 connected
+monitor---->register datapath: 1000000000000017
+discovery---> AccessPoint: 14 connected
+monitor---->register datapath: 1000000000000018
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code/network_monitor.py", line 66, in scheduler
+    self.create_bandwidth_graph()
+  File "/home/terry/LJQ/rerouting-drl/application-model/ryu_code/network_monitor.py", line 340, in create_bandwidth_graph
+    capacity = self.network_structure.m_graph[src_dpid][dst_dpid]['free_bw']
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/coreviews.py", line 51, in __getitem__
+    return self._atlas[key]
+KeyError: 2
+

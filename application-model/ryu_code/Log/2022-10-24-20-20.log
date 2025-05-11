@@ -1,0 +1,399 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-39rijq0h because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler_13.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler_13.py of ARP_PROXY_13
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> switch: 1152921504606846977 connected
+switch: 1152921504606846977 connected
+discovery---> switch: 1152921504606846978 connected
+discovery---> switch: 1152921504606846979 connected
+switch: 1152921504606846978 connected
+switch: 1152921504606846979 connected
+monitor---->register datapath: 1000000000000001
+monitor---->register datapath: 1000000000000002
+monitor---->register datapath: 1000000000000003
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 280.06768226623535
+1152921504606846978 <---> 1152921504606846979 : 271.3155746459961
+1152921504606846978 <---> 1152921504606846978 : 286.95034980773926
+1152921504606846977 <---> 1152921504606846978 : 892.4267292022705
+1152921504606846977 <---> 1152921504606846979 : 35.88080406188965
+1152921504606846977 <---> 1152921504606846977 : 44.07691955566406
+1152921504606846979 <---> 1152921504606846977 : 839.576244354248
+1152921504606846979 <---> 1152921504606846978 : 776.0155200958252
+1152921504606846979 <---> 1152921504606846979 : 823.9455223083496
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846978, 1152921504606846979), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000003        1        0        0        0    45089  3438126        0
+1000000000000003        2    22411  1313377        0    22830  1338317        0
+1000000000000003        3    22844  1339197        0    22399  1312697        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 221, in _flow_stats_reply_handler
+    stat.match['in_port'], stat.match['ipv4_dst'],
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 904, in __getitem__
+    return dict(self._fields2)[key]
+KeyError: 'in_port'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000001        1        0        0        0    45084  3437688        0
+1000000000000001        2    22438  1315037        0    22813  1337297        0
+1000000000000001        3    22826  1338077        0    22411  1313377        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 221, in _flow_stats_reply_handler
+    stat.match['in_port'], stat.match['ipv4_dst'],
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 904, in __getitem__
+    return dict(self._fields2)[key]
+KeyError: 'in_port'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000002        1        0        0        0    45144  3442464        0
+1000000000000002        2    22807  1336937        0    22438  1315037        0
+1000000000000002        3    22396  1312517        0    22844  1339197        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 221, in _flow_stats_reply_handler
+    stat.match['in_port'], stat.match['ipv4_dst'],
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 904, in __getitem__
+    return dict(self._fields2)[key]
+KeyError: 'in_port'
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 725.7778644561768
+1152921504606846978 <---> 1152921504606846979 : 725.3713607788086
+1152921504606846978 <---> 1152921504606846978 : 797.1420288085938
+1152921504606846977 <---> 1152921504606846978 : 457.0276737213135
+1152921504606846977 <---> 1152921504606846979 : 457.517147064209
+1152921504606846977 <---> 1152921504606846977 : 392.87543296813965
+1152921504606846979 <---> 1152921504606846977 : 328.493595123291
+1152921504606846979 <---> 1152921504606846978 : 260.8218193054199
+1152921504606846979 <---> 1152921504606846979 : 261.6865634918213
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 286.2129211425781
+1152921504606846978 <---> 1152921504606846979 : 347.71013259887695
+1152921504606846978 <---> 1152921504606846978 : 346.73047065734863
+1152921504606846977 <---> 1152921504606846978 : 771.1238861083984
+1152921504606846977 <---> 1152921504606846979 : 864.3703460693359
+1152921504606846977 <---> 1152921504606846977 : 794.7027683258057
+1152921504606846979 <---> 1152921504606846977 : 668.7006950378418
+1152921504606846979 <---> 1152921504606846978 : 645.2481746673584
+1152921504606846979 <---> 1152921504606846979 : 723.9804267883301
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846978, 1152921504606846979), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 59, in scheduler
+    self.create_bandwidth_graph()
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 316, in create_bandwidth_graph
+    capacity = self.network_structure.m_graph[src_dpid][dst_dpid]['bw']
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/cls.py", line 465, in __getitem__
+    return self.adj[n]
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/coreviews.py", line 79, in __getitem__
+    return AtlasView(self._atlas[name])
+KeyError: 1152921504606846978
+
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000001        1        0        0        0    47999  3665058        0
+1000000000000001        2    23881  1401617        0    24274  1424957        0
+1000000000000001        3    24294  1426157        0    23865  1400617        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 221, in _flow_stats_reply_handler
+    stat.match['in_port'], stat.match['ipv4_dst'],
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 904, in __getitem__
+    return dict(self._fields2)[key]
+KeyError: 'in_port'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000003        1        0        0        0    48011  3666042        0
+1000000000000003        2    23865  1400617        0    24294  1426157        0
+1000000000000003        3    24319  1427697        0    23857  1400177        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 221, in _flow_stats_reply_handler
+    stat.match['in_port'], stat.match['ipv4_dst'],
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 904, in __getitem__
+    return dict(self._fields2)[key]
+KeyError: 'in_port'
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+1000000000000002        1        0        0        0    48062  3670068        0
+1000000000000002        2    24287  1425737        0    23883  1401737        0
+1000000000000002        3    23857  1400177        0    24319  1427697        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+monitor: Exception occurred during handler processing. Backtrace from offending handler [_flow_stats_reply_handler] servicing event [EventOFPFlowStatsReply] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 221, in _flow_stats_reply_handler
+    stat.match['in_port'], stat.match['ipv4_dst'],
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 904, in __getitem__
+    return dict(self._fields2)[key]
+KeyError: 'in_port'
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 757.0602893829346
+1152921504606846978 <---> 1152921504606846979 : 809.8742961883545
+1152921504606846978 <---> 1152921504606846978 : 758.7449550628662
+1152921504606846977 <---> 1152921504606846978 : 339.2505645751953
+1152921504606846977 <---> 1152921504606846979 : 409.1675281524658
+1152921504606846977 <---> 1152921504606846977 : 337.7547264099121
+1152921504606846979 <---> 1152921504606846977 : 219.39349174499512
+1152921504606846979 <---> 1152921504606846978 : 220.63636779785156
+1152921504606846979 <---> 1152921504606846979 : 186.72847747802734
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977), (1152921504606846978, 1152921504606846979), (1152921504606846977, 1152921504606846979)]
+discovery--->==============================
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 435.47725677490234
+1152921504606846978 <---> 1152921504606846979 : 304.52775955200195
+1152921504606846978 <---> 1152921504606846978 : 360.8529567718506
+1152921504606846977 <---> 1152921504606846978 : 841.7172431945801
+1152921504606846977 <---> 1152921504606846979 : 785.1450443267822
+1152921504606846977 <---> 1152921504606846977 : 906.6953659057617
+1152921504606846979 <---> 1152921504606846977 : 628.6096572875977
+1152921504606846979 <---> 1152921504606846978 : 673.2726097106934
+1152921504606846979 <---> 1152921504606846979 : 617.1107292175293
+switches: Exception occurred during handler processing. Backtrace from offending handler [lldp_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/topology/switches.py", line 796, in lldp_packet_in_handler
+    self.ports.lldp_received(src)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/topology/switches.py", line 327, in lldp_received
+    self[port].lldp_received()
+  File "/usr/local/lib/python3.6/dist-packages/ryu/topology/switches.py", line 99, in __hash__
+    def __hash__(self):
+KeyboardInterrupt
+Error in the datapath 1000000000000002 from ('127.0.0.1', 34798)
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 557, in datapath_connection_factory
+    datapath.serve()
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 475, in serve
+    self._recv_loop()
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 215, in deactivate
+    method(self)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 330, in _recv_loop
+    while self.state != DEAD_DISPATCHER:
+KeyboardInterrupt
+
+monitor---> unreigster datapath: 1000000000000002
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 294.2850589752197
+1152921504606846978 <---> 1152921504606846979 : 275.3620147705078
+1152921504606846978 <---> 1152921504606846978 : 283.51569175720215
+1152921504606846977 <---> 1152921504606846978 : 744.8909282684326
+1152921504606846977 <---> 1152921504606846979 : 6.541967391967773
+1152921504606846977 <---> 1152921504606846977 : 0
+1152921504606846979 <---> 1152921504606846977 : 3.1375885009765625
+1152921504606846979 <---> 1152921504606846978 : 584.575891494751
+1152921504606846979 <---> 1152921504606846979 : 2.6018619537353516
+discovery---> switch: 1152921504606846978 connected
+switch: 1152921504606846978 connected
+monitor---->register datapath: 1000000000000002
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846977, 1152921504606846979), (1152921504606846977, 1152921504606846978), (1152921504606846979, 1152921504606846978)]
+discovery--->==============================
+switches: Exception occurred during handler processing. Backtrace from offending handler [lldp_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/topology/switches.py", line 777, in lldp_packet_in_handler
+    src_dpid, src_port_no = LLDPPacket.lldp_parse(msg.data)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/topology/switches.py", line 466, in lldp_parse
+    pkt = packet.Packet(data)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/packet/packet.py", line 67, in __init__
+    self._parser(parse_cls)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/packet/packet.py", line 76, in _parser
+    proto, cls, rest_data = cls.parser(rest_data)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/packet/ethernet.py", line 60, in parser
+    return (cls(addrconv.mac.bin_to_text(dst),
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/addrconv.py", line 41, in bin_to_text
+    **self._addr_kwargs))
+  File "/home/terry/.local/lib/python3.6/site-packages/netaddr/eui/__init__.py", line 744, in __str__
+    return self._module.int_to_str(self._value, self._dialect)
+  File "/home/terry/.local/lib/python3.6/site-packages/netaddr/strategy/eui48.py", line 213, in int_to_str
+    tokens = [dialect.word_fmt % i for i in words]
+  File "/home/terry/.local/lib/python3.6/site-packages/netaddr/strategy/eui48.py", line 213, in <listcomp>
+    tokens = [dialect.word_fmt % i for i in words]
+KeyboardInterrupt
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 457.9780101776123
+1152921504606846978 <---> 1152921504606846979 : 442.7196979522705
+1152921504606846978 <---> 1152921504606846978 : 400.69580078125
+1152921504606846977 <---> 1152921504606846978 : 225.8620262145996
+1152921504606846977 <---> 1152921504606846979 : 103.26552391052246
+1152921504606846977 <---> 1152921504606846977 : 225.53086280822754
+1152921504606846979 <---> 1152921504606846977 : 166.69249534606934
+1152921504606846979 <---> 1152921504606846978 : 283.8897705078125
+1152921504606846979 <---> 1152921504606846979 : 166.35775566101074
+Encountered an error while parsing OpenFlow packet from switch. This implies the switch sent a malformed OpenFlow packet. version 0x04 msg_type 10 msg_len 102 xid 0 buf 0x04 0x0a 0x00 0x66 0x00 0x00 0x00 0x00 0xff 0xff 0xff 0xff 0x00 0x3c 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x01 0x00 0x0c 0x80 0x00 0x00 0x04 0x00 0x00 0x00 0x03 0x00 0x00 0x00 0x00 0x00 0x00 0x01 0x80 0xc2 0x00 0x00 0x0e 0x6e 0xbe 0x22 0xbf 0x45 0x63 0x88 0xcc 0x02 0x16 0x07 0x64 0x70 0x69 0x64 0x3a 0x31 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x33 0x04 0x05 0x02 0x00 0x00 0x00 0x03 0x06 0x02 0x00 0x78 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_parser.py", line 67, in msg
+    msg = msg_parser(datapath, version, msg_type, msg_len, xid, buf)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 94, in msg_parser
+    return parser(datapath, version, msg_type, msg_len, xid, buf)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 2332, in parser
+    ofproto.OFP_MATCH_SIZE)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 1310, in parser
+    match = OFPMatch()
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 879, in __init__
+    self._wc = FlowWildcards()
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 715, in __init__
+    self.pbb_isid_mask = 0
+KeyboardInterrupt
+switches: Exception occurred during handler processing. Backtrace from offending handler [lldp_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/topology/switches.py", line 777, in lldp_packet_in_handler
+    src_dpid, src_port_no = LLDPPacket.lldp_parse(msg.data)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/topology/switches.py", line 466, in lldp_parse
+    pkt = packet.Packet(data)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/packet/packet.py", line 67, in __init__
+    self._parser(parse_cls)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/packet/packet.py", line 76, in _parser
+    proto, cls, rest_data = cls.parser(rest_data)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/packet/ethernet.py", line 60, in parser
+    return (cls(addrconv.mac.bin_to_text(dst),
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/addrconv.py", line 41, in bin_to_text
+    **self._addr_kwargs))
+  File "/home/terry/.local/lib/python3.6/site-packages/netaddr/eui/__init__.py", line 392, in __init__
+    self.dialect = dialect
+  File "/home/terry/.local/lib/python3.6/site-packages/netaddr/eui/__init__.py", line 473, in _set_dialect
+    self._dialect = self._validate_dialect(value)
+  File "/home/terry/.local/lib/python3.6/site-packages/netaddr/eui/__init__.py", line 467, in _validate_dialect
+    if hasattr(value, 'word_size') and hasattr(value, 'word_fmt'):
+KeyboardInterrupt
+Encountered an error while parsing OpenFlow packet from switch. This implies the switch sent a malformed OpenFlow packet. version 0x04 msg_type 10 msg_len 102 xid 0 buf 0x04 0x0a 0x00 0x66 0x00 0x00 0x00 0x00 0xff 0xff 0xff 0xff 0x00 0x3c 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x01 0x00 0x0c 0x80 0x00 0x00 0x04 0x00 0x00 0x00 0x03 0x00 0x00 0x00 0x00 0x00 0x00 0x01 0x80 0xc2 0x00 0x00 0x0e 0xd6 0xe1 0x09 0x56 0x4e 0xf8 0x88 0xcc 0x02 0x16 0x07 0x64 0x70 0x69 0x64 0x3a 0x31 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x30 0x32 0x04 0x05 0x02 0x00 0x00 0x00 0x03 0x06 0x02 0x00 0x78 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_parser.py", line 67, in msg
+    msg = msg_parser(datapath, version, msg_type, msg_len, xid, buf)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 94, in msg_parser
+    return parser(datapath, version, msg_type, msg_len, xid, buf)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 2332, in parser
+    ofproto.OFP_MATCH_SIZE)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 1324, in parser
+    cls.parser_old(match, buf, offset, length)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 1344, in parser_old
+    @staticmethod
+KeyboardInterrupt
+Error in the datapath 1000000000000003 from ('127.0.0.1', 34790)
+hub: uncaught exception: Traceback (most recent call last):
+  File "/home/terry/.local/lib/python3.6/site-packages/eventlet/greenio/base.py", line 351, in _recv_loop
+    return recv_meth(*args)
+BlockingIOError: [Errno 11] 资源暂时不可用
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 557, in datapath_connection_factory
+    datapath.serve()
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 475, in serve
+    self._recv_loop()
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 215, in deactivate
+    method(self)
+  File "/usr/local/lib/python3.6/dist-packages/ryu/controller/controller.py", line 335, in _recv_loop
+    ret = self.socket.recv(read_len)
+  File "/home/terry/.local/lib/python3.6/site-packages/eventlet/greenio/base.py", line 367, in recv
+    return self._recv_loop(self.fd.recv, b'', bufsize, flags)
+  File "/home/terry/.local/lib/python3.6/site-packages/eventlet/greenio/base.py", line 351, in _recv_loop
+    return recv_meth(*args)
+KeyboardInterrupt
+
+monitor---> unreigster datapath: 1000000000000003
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(1152921504606846978, 1152921504606846977)]
+discovery--->==============================
+discovery---> switch: 1152921504606846979 connected
+switch: 1152921504606846979 connected
+monitor---->register datapath: 1000000000000003
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.101898193359375
+1152921504606846978 <---> 1152921504606846979 : 286.15736961364746
+1152921504606846978 <---> 1152921504606846978 : 0
+1152921504606846977 <---> 1152921504606846978 : 1.1744499206542969
+1152921504606846977 <---> 1152921504606846979 : 865.7832145690918
+1152921504606846977 <---> 1152921504606846977 : 866.8339252471924
+1152921504606846979 <---> 1152921504606846977 : 159.90853309631348
+1152921504606846979 <---> 1152921504606846978 : 16.788244247436523
+1152921504606846979 <---> 1152921504606846979 : 158.9224338531494
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+1152921504606846978 <---> 1152921504606846977 : 2.101898193359375
+1152921504606846978 <---> 1152921504606846979 : 286.15736961364746
+1152921504606846978 <---> 1152921504606846978 : 0
+1152921504606846977 <---> 1152921504606846978 : 1.1744499206542969
+1152921504606846977 <---> 1152921504606846979 : 865.7832145690918
+1152921504606846977 <---> 1152921504606846977 : 866.8339252471924
+1152921504606846979 <---> 1152921504606846977 : 159.90853309631348
+1152921504606846979 <---> 1152921504606846978 : 16.788244247436523
+1152921504606846979 <---> 1152921504606846979 : 158.9224338531494

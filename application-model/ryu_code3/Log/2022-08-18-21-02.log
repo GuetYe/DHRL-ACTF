@@ -1,0 +1,347 @@
+loading app network_structure.py
+loading app network_monitor.py
+loading app network_delay.py
+loading app network_shortest_path.py
+loading app arp_handler.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app network_shortest_path.py of NetworkShortestPath
+instantiating app arp_handler.py of ArpHandler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> switch: 1 connected
+discovery---> switch: 3 connected
+discovery---> switch: 4 connected
+monitor---->register datapath: 0000000000000001
+monitor---->register datapath: 0000000000000003
+discovery---> switch: 5 connected
+discovery---> switch: 2 connected
+monitor---->register datapath: 0000000000000004
+monitor---->register datapath: 0000000000000002
+monitor---->register datapath: 0000000000000005
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+3 <---> 5 : 3.5948753356933594
+3 <---> 1 : 3.4656524658203125
+1 <---> 4 : 3.3931732177734375
+1 <---> 3 : 3.654956817626953
+1 <---> 2 : 3.685474395751953
+4 <---> 5 : 3.8471221923828125
+4 <---> 1 : 3.9658546447753906
+5 <---> 2 : 3.5469532012939453
+5 <---> 4 : 3.6776065826416016
+5 <---> 3 : 3.6089420318603516
+2 <---> 1 : 3.525257110595703
+2 <---> 5 : 4.348516464233398
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 5), (3, 1), (5, 4), (5, 2), (1, 4), (1, 2)]
+discovery--->==============================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        6      360        0        6      360        0
+0000000000000003        2        5      300        0        6      360        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        6      360        0        6      360        0
+0000000000000001        2        6      360        0        6      360        0
+0000000000000001        3        6      360        0        6      360        0
+0000000000000001        4        9      762        0        5      300        0
+0000000000000001        5        8      676        0        6      360        0
+0000000000000001        6        8      676        0        6      360        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1        6      360        0        6      360        0
+0000000000000004        2        6      360        0        5      300        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1        6      360        0        5      300        0
+0000000000000005        2        6      360        0        5      300        0
+0000000000000005        3        5      300        0        6      360        0
+0000000000000005        4        8      676        0        5      300        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        6      360        0        6      360        0
+0000000000000002        2        5      300        0        6      360        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+3 <---> 5 : 3.755331039428711
+3 <---> 1 : 3.7314891815185547
+1 <---> 4 : 3.582477569580078
+1 <---> 3 : 3.766775131225586
+1 <---> 2 : 4.093647003173828
+4 <---> 5 : 1.8856525421142578
+4 <---> 1 : 3.4928321838378906
+5 <---> 2 : 4.282712936401367
+5 <---> 4 : 3.5996437072753906
+5 <---> 3 : 3.7355422973632812
+2 <---> 1 : 3.9017200469970703
+2 <---> 5 : 3.5326480865478516
+shortest=====>[PATH] [10.0.0.1 <----> 10.0.0.2]: [1]
+shortest=====>[PATH] [10.0.0.1 <----> 10.0.0.3]: [1]
+network_shorest_path: Exception occurred during handler processing. Backtrace from offending handler [_packet_in_handler] servicing event [EventOFPPacketIn] follows.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/base/app_manager.py", line 290, in _event_loop
+    handler(ev)
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_shortest_path.py", line 101, in _packet_in_handler
+    self.calculate_shortest_paths(msg, eth_type, ipv4_pkt.src, ipv4_pkt.dst)
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_shortest_path.py", line 115, in calculate_shortest_paths
+    path = self.calculate_path(src_switch, dst_switch)
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_shortest_path.py", line 159, in calculate_path
+    self.network_structure.calculate_shortest_paths(src_dpid, dst_dpid, self.network_structure.calculate_weight)
+  File "/home/terry/LJQ/LJQ_CORE_CODE/LJQ_Project/Task/ryu/network_structure.py", line 225, in calculate_shortest_paths
+    weight=weight, method=setting.METHOD)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/generic.py", line 162, in shortest_path
+    paths = nx.dijkstra_path(G, source, target, weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 157, in dijkstra_path
+    (length, path) = single_source_dijkstra(G, source, target=target, weight=weight)
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 465, in single_source_dijkstra
+    G, {source}, cutoff=cutoff, target=target, weight=weight
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 723, in multi_source_dijkstra
+    G, sources, weight, paths=paths, cutoff=cutoff, target=target
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 831, in _dijkstra_multisource
+    raise ValueError("Contradictory paths found:", "negative weights?")
+ValueError: ('Contradictory paths found:', 'negative weights?')
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+3 <---> 5 : 1.8775463104248047
+3 <---> 1 : 4.39453125
+1 <---> 4 : 4.617452621459961
+1 <---> 3 : 3.624439239501953
+1 <---> 2 : 1.9087791442871094
+4 <---> 5 : 3.6821365356445312
+4 <---> 1 : 3.500699996948242
+5 <---> 2 : 3.622770309448242
+5 <---> 4 : 3.5865306854248047
+5 <---> 3 : 3.5505294799804688
+2 <---> 1 : 3.5898685455322266
+2 <---> 5 : 3.5867691040039062
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 5), (3, 1), (5, 4), (5, 2), (1, 4), (1, 2)]
+discovery--->==============================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       18     1026        0       14      786        0
+0000000000000001        2       17      966        0       15      846        0
+0000000000000001        3       18     1026        0       14      786        0
+0000000000000001        4       15     1182        0       28     1702        0
+0000000000000001        5       11      886        0       13      800        0
+0000000000000001        6       11      886        0       14      842        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        4          10.0.0.2        5        0        0
+0000000000000001        4          10.0.0.3        6        0        0
+0000000000000001        5          10.0.0.1        4        1       98
+0000000000000001        6          10.0.0.1        4        1       98
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       15      846        0       14      786        0
+0000000000000005        2       14      786        0       17      966        0
+0000000000000005        3       14      786        0       15      846        0
+0000000000000005        4       10      788        0       14      786        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       15      846        0       17      966        0
+0000000000000003        2       17      966        0       14      786        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       14      786        0       18     1026        0
+0000000000000002        2       14      786        0       15      846        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       14      786        0       18     1026        0
+0000000000000004        2       15      846        0       14      786        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+3 <---> 5 : 4.325389862060547
+3 <---> 1 : 4.057645797729492
+1 <---> 4 : 3.731966018676758
+1 <---> 3 : 3.730297088623047
+1 <---> 2 : 3.735065460205078
+4 <---> 5 : 3.4949779510498047
+4 <---> 1 : 3.5429000854492188
+5 <---> 2 : 3.9844512939453125
+5 <---> 4 : 3.7593841552734375
+5 <---> 3 : 3.641843795776367
+2 <---> 1 : 4.107952117919922
+2 <---> 5 : 3.7522315979003906
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 5), (3, 1), (5, 4), (5, 2), (1, 4), (1, 2)]
+discovery--->==============================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       20     1146        0       23     1326        0
+0000000000000003        2       22     1266        0       20     1146        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1       23     1326        0       20     1146        0
+0000000000000001        2       23     1326        0       20     1146        0
+0000000000000001        3       23     1326        0       20     1146        0
+0000000000000001        4       16     1252        0       34     2062        0
+0000000000000001        5       12      928        0       20     1220        0
+0000000000000001        6       12      928        0       21     1262        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        4          10.0.0.2        5        0        0
+0000000000000001        4          10.0.0.3        6        0        0
+0000000000000001        5          10.0.0.1        4        1       98
+0000000000000001        6          10.0.0.1        4        1       98
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1       20     1146        0       23     1326        0
+0000000000000002        2       19     1086        0       20     1146        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       20     1146        0       19     1086        0
+0000000000000005        2       20     1146        0       22     1266        0
+0000000000000005        3       20     1146        0       20     1146        0
+0000000000000005        4       10      788        0       19     1086        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       20     1146        0       23     1326        0
+0000000000000004        2       20     1146        0       20     1146        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+3 <---> 5 : 3.6325454711914062
+3 <---> 1 : 3.5762786865234375
+1 <---> 4 : 3.4291744232177734
+1 <---> 3 : 3.6742687225341797
+1 <---> 2 : 3.6094188690185547
+4 <---> 5 : 3.7479400634765625
+4 <---> 1 : 3.701448440551758
+5 <---> 2 : 4.1828155517578125
+5 <---> 4 : 3.6194324493408203
+5 <---> 3 : 3.7069320678710938
+2 <---> 1 : 3.690958023071289
+2 <---> 5 : 4.107236862182617
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+3 <---> 5 : 3.521442413330078
+3 <---> 1 : 3.554105758666992
+1 <---> 4 : 3.4737586975097656
+1 <---> 3 : 3.540515899658203
+1 <---> 2 : 3.5817623138427734
+4 <---> 5 : 3.7827491760253906
+4 <---> 1 : 3.6771297454833984
+5 <---> 2 : 3.6592483520507812
+5 <---> 4 : 3.4525394439697266
+5 <---> 3 : 3.6716461181640625
+2 <---> 1 : 3.6749839782714844
+2 <---> 5 : 3.528594970703125
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='e2:b7:dc:6f:e5:3e',name=b's1-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=5,hw_addr='a6:6d:4f:00:66:c5',name=b's1-eth5',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=6,hw_addr='d2:38:8c:b5:af:e7',name=b's1-eth6',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=4,hw_addr='d2:45:09:ba:2d:69',name=b's5-eth4',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='fa:b6:be:ba:01:9c',name=b's1-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='0a:24:43:d3:ee:64',name=b's2-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        2       28     1626        0       26     1506        0
+0000000000000001        3       29     1686        0       25     1446        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+0000000000000001        4          10.0.0.2        5        0        0
+0000000000000001        4          10.0.0.3        6        0        0
+0000000000000001        5          10.0.0.1        4        1       98
+0000000000000001        6          10.0.0.1        4        1       98
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        2       25     1446        0       26     1506        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000005        1       26     1506        0       25     1446        0
+0000000000000005        2       25     1446        0       28     1626        0
+0000000000000005        3       25     1446        0       26     1506        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1       26     1506        0       28     1626        0
+0000000000000003        2       28     1626        0       25     1446        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000004        1       25     1446        0       29     1686        0
+0000000000000004        2       26     1506        0       25     1446        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 5), (3, 1), (5, 4), (5, 2), (1, 4)]
+discovery--->==============================
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='c6:80:e7:d8:b7:c0',name=b's1-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='e2:97:e0:31:07:71',name=b's3-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='f6:a5:67:cf:b4:28',name=b's4-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='4a:cd:5e:31:0d:6c',name=b's1-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='ee:fa:11:18:62:a4',name=b's2-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=1,hw_addr='42:f3:6a:c1:3a:cc',name=b's5-eth1',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='2a:f1:71:03:cf:0d',name=b's3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='0e:25:03:94:42:d0',name=b's5-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='ae:4a:3a:ab:b0:0d',name=b's4-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='6a:ac:7b:aa:c8:99',name=b's5-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+monitor---> unreigster datapath: 0000000000000004
+monitor---> unreigster datapath: 0000000000000001
+monitor---> unreigster datapath: 0000000000000003
+monitor---> unreigster datapath: 0000000000000002
+monitor---> unreigster datapath: 0000000000000005
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+3 <---> 5 : 10.325431823730469
+3 <---> 1 : 3.554105758666992
+1 <---> 4 : 3.4737586975097656
+1 <---> 3 : 3.540515899658203
+1 <---> 2 : 3.5817623138427734
+4 <---> 5 : 3.7827491760253906
+4 <---> 1 : 1.7080307006835938
+5 <---> 2 : 3.8077831268310547
+5 <---> 4 : 1.8129348754882812
+5 <---> 3 : 3.704071044921875
+2 <---> 1 : 3.752470016479492
+2 <---> 5 : 1.8770694732666016
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->==============================

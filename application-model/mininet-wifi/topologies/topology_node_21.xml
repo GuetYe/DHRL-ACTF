@@ -1,0 +1,227 @@
+<root>
+  <topology>
+    <nodes>
+      <node id="25">
+          <locationap coordinate="90,150,0"/>
+          <locationsta coordinate="90,160,0"/>
+      </node>
+      <node id="26">
+          <locationap coordinate="30,120,0"/>
+          <locationsta coordinate="30,130,0"/>
+      </node>
+      <node id="27">
+          <locationap coordinate="60,150,0"/>
+          <locationsta coordinate="60,160,0"/>
+      </node>
+      <node id="28">
+          <locationap coordinate="90,120,0"/>
+          <locationsta coordinate="90,110,0"/>
+      </node>
+      <node id="29">
+          <locationap coordinate="120,120,0"/>
+          <locationsta coordinate="120,110,0"/>
+      </node>
+      <node id="30">
+          <locationap coordinate="60,120,0"/>
+          <locationsta coordinate="60,110,0"/>
+      </node>
+      <node id="31">
+          <locationap coordinate="160,120,0"/>
+          <locationsta coordinate="160,110,0"/>
+      </node>
+      <node id="32">
+          <locationap coordinate="160,60,0"/>
+          <locationsta coordinate="160,50,0"/>
+      </node>
+      <node id="33">
+          <locationap coordinate="110,150,0"/>
+          <locationsta coordinate="110,160,0"/>
+      </node>
+      <node id="34">
+          <locationap coordinate="140,150,0"/>
+          <locationsta coordinate="140,160,0"/>
+      </node>
+      <node id="35">
+          <locationap coordinate="60,30,0"/>
+          <locationsta coordinate="60,20,0"/>
+      </node>
+      <node id="36">
+          <locationap coordinate="110,30,0"/>
+          <locationsta coordinate="110,20,0"/>
+      </node>
+      <node id="37">
+          <locationap coordinate="90,30,0"/>
+          <locationsta coordinate="90,20,0"/>
+      </node>
+      <node id="38">
+          <locationap coordinate="160,30,0"/>
+          <locationsta coordinate="160,20,0"/>
+      </node>
+      <node id="39">
+          <locationap coordinate="190,90,0"/>
+          <locationsta coordinate="190,80,0"/>
+      </node>
+      <node id="40">
+          <locationap coordinate="160,150,0"/>
+          <locationsta coordinate="160,160,0"/>
+      </node>
+      <node id="41">
+          <locationap coordinate="190,30,0"/>
+          <locationsta coordinate="190,20,0"/>
+      </node>
+      <node id="42">
+          <locationap coordinate="190,150,0"/>
+          <locationsta coordinate="190,160,0"/>
+      </node>
+      <node id="43">
+          <locationap coordinate="210,60,0"/>
+          <locationsta coordinate="210,50,0"/>
+      </node>
+      <node id="44">
+          <locationap coordinate="210,120,0"/>
+          <locationsta coordinate="210,130,0"/>
+      </node>
+      <node id="45">
+          <locationap coordinate="240,90,0"/>
+          <locationsta coordinate="240,100,0"/>
+      </node>
+    </nodes>
+
+    <links>
+
+      <link id="25_27">
+        <from if="0" node="25"/>
+        <to if="0" node="27"/>
+      </link>
+      <link id="25_28">
+        <from if="0" node="25"/>
+        <to if="0" node="28"/>
+      </link>
+      <link id="25_29">
+        <from if="0" node="25"/>
+        <to if="0" node="29"/>
+      </link>
+      <link id="25_33">
+        <from if="0" node="25"/>
+        <to if="0" node="33"/>
+      </link>
+
+      <link id="26_27">
+        <from if="0" node="26"/>
+        <to if="0" node="27"/>
+      </link>
+      <link id="26_28">
+        <from if="0" node="26"/>
+        <to if="0" node="28"/>
+      </link>
+      <link id="26_35">
+        <from if="0" node="26"/>
+        <to if="0" node="35"/>
+      </link>
+
+      <link id="28_30">
+        <from if="0" node="28"/>
+        <to if="0" node="30"/>
+      </link>
+      <link id="28_37">
+        <from if="0" node="28"/>
+        <to if="0" node="37"/>
+      </link>
+      
+      <link id="29_31">
+        <from if="0" node="29"/>
+        <to if="0" node="31"/>
+      </link>
+      <link id="29_32">
+        <from if="0" node="29"/>
+        <to if="0" node="32"/>
+      </link>
+
+      <link id="31_32">
+        <from if="0" node="31"/>
+        <to if="0" node="32"/>
+      </link>
+      <link id="31_39">
+        <from if="0" node="31"/>
+        <to if="0" node="39"/>
+      </link>
+      <link id="31_40">
+        <from if="0" node="31"/>
+        <to if="0" node="40"/>
+      </link>
+      
+      <link id="32_38">
+        <from if="0" node="32"/>
+        <to if="0" node="38"/>
+      </link>
+      <link id="32_39">
+        <from if="0" node="32"/>
+        <to if="0" node="39"/>
+      </link>
+      
+      <link id="33_34">
+        <from if="0" node="33"/>
+        <to if="0" node="34"/>
+      </link>
+
+      <link id="34_40">
+        <from if="0" node="34"/>
+        <to if="0" node="40"/>
+      </link>
+
+      <link id="35_37">
+        <from if="0" node="35"/>
+        <to if="0" node="37"/>
+      </link>
+
+      <link id="36_37">
+        <from if="0" node="36"/>
+        <to if="0" node="37"/>
+      </link>
+      <link id="36_38">
+        <from if="0" node="36"/>
+        <to if="0" node="38"/>
+      </link>
+
+      <link id="38_41">
+        <from if="0" node="38"/>
+        <to if="0" node="41"/>
+      </link>
+
+      <link id="39_43">
+        <from if="0" node="39"/>
+        <to if="0" node="43"/>
+      </link>
+      <link id="39_44">
+        <from if="0" node="39"/>
+        <to if="0" node="44"/>
+      </link>
+
+      <link id="40_42">
+        <from if="0" node="40"/>
+        <to if="0" node="42"/>
+      </link>
+
+      <link id="41_43">
+        <from if="0" node="41"/>
+        <to if="0" node="43"/>
+      </link>
+
+      <link id="42_44">
+        <from if="0" node="42"/>
+        <to if="0" node="44"/>
+      </link>
+
+      <link id="43_45">
+        <from if="0" node="43"/>
+        <to if="0" node="45"/>
+      </link>
+
+      <link id="44_45">
+        <from if="0" node="44"/>
+        <to if="0" node="45"/>
+      </link>
+      
+    </links>
+  </topology>
+</root>

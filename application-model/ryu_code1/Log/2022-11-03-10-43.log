@@ -1,0 +1,131 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-okkv_c8t because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app network_delay.py
+loading app ryu.controller.ofp_handler
+instantiating app None of Switches
+creating context switches
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app network_delay.py of NetworkDelay
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000001
+monitor---->register datapath: 1000000000000002
+monitor---->register datapath: 1000000000000003
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+2 <---> 1 : 11.810541152954102
+2 <---> 3 : 15.64788818359375
+1 <---> 2 : 13.063192367553711
+1 <---> 3 : 17.000198364257812
+3 <---> 2 : 17.071008682250977
+3 <---> 1 : 15.341520309448242
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(2, 1), (2, 3), (1, 3)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0      188    14664        0
+0000000000000001        2      225    15235        0      223    15125        0
+0000000000000001        3      223    15115        0      224    15185        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0      187    14586        0
+0000000000000002        2      223    15125        0      225    15235        0
+0000000000000002        3      222    15065        0      225    15235        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0      188    14664        0
+0000000000000003        2      224    15185        0      223    15115        0
+0000000000000003        3      225    15235        0      222    15065        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+2 <---> 1 : 13.252496719360352
+2 <---> 3 : 17.32039451599121
+1 <---> 2 : 12.962818145751953
+1 <---> 3 : 16.21723175048828
+3 <---> 2 : 15.771627426147461
+3 <---> 1 : 15.216588973999023
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+2 <---> 1 : 11.185646057128906
+2 <---> 3 : 17.15874671936035
+1 <---> 2 : 11.146783828735352
+1 <---> 3 : 16.844987869262695
+3 <---> 2 : 17.082929611206055
+3 <---> 1 : 17.13085174560547
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(2, 1), (2, 3), (1, 3)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0      193    15054        0
+0000000000000001        2      231    15595        0      228    15425        0
+0000000000000001        3      228    15415        0      229    15485        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0      192    14976        0
+0000000000000002        2      228    15425        0      231    15595        0
+0000000000000002        3      227    15365        0      232    15665        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0      193    15054        0
+0000000000000003        2      229    15485        0      228    15415        0
+0000000000000003        3      232    15665        0      227    15365        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+==================================== link detector ====================================
+
+----------------------------
+src    dst :    delay
+2 <---> 1 : 11.534929275512695
+2 <---> 3 : 15.450239181518555
+1 <---> 2 : 13.105630874633789
+1 <---> 3 : 17.130374908447266
+3 <---> 2 : 17.252445220947266
+3 <---> 1 : 15.777349472045898
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(2, 1), (2, 3), (1, 3)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0      198    15444        0
+0000000000000002        2      234    15785        0      236    15895        0
+0000000000000002        3      233    15725        0      237    15965        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0      199    15522        0
+0000000000000003        2      235    15845        0      234    15775        0
+0000000000000003        3      237    15965        0      233    15725        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0      199    15522        0
+0000000000000001        2      236    15895        0      234    15785        0
+0000000000000001        3      234    15775        0      235    15845        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------

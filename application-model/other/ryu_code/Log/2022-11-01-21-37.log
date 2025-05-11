@@ -1,0 +1,190 @@
+loading app network_structure.py
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-8sbmksyq because the default path (/home/terry/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Generating new fontManager, this may take some time...
+Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face.  Unknown file format.
+loading app network_monitor.py
+loading app ryu.topology.switches
+loading app ryu.controller.ofp_handler
+instantiating app network_structure.py of NetworkStructure
+instantiating app network_monitor.py of NetworkMonitor
+instantiating app ryu.topology.switches of Switches
+instantiating app ryu.controller.ofp_handler of OFPHandler
+discovery---> AccessPoint: 1 connected
+discovery---> AccessPoint: 2 connected
+discovery---> AccessPoint: 3 connected
+monitor---->register datapath: 1000000000000001
+monitor---->register datapath: 1000000000000002
+monitor---->register datapath: 1000000000000003
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0 20887651 1987554000        0
+0000000000000001        2 93489446 7375153030        0 89218650 7071517789        0
+0000000000000001        3 89218660 7071518731        0 93489436 7375152088        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0 20734447 1984797497        0
+0000000000000002        2 89218650 7071517789        0 93489446 7375153030        0
+0000000000000002        3 93489440 7375152499        0 89218656 7071518320        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0 20981391 1989243094        0
+0000000000000003        2 93489436 7375152088        0 89218660 7071518731        0
+0000000000000003        3 89218656 7071518320        0 93489440 7375152499        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 59, in scheduler
+    self.create_bandwidth_graph()
+  File "/home/terry/LJQ/Task/ryu/network_monitor.py", line 322, in create_bandwidth_graph
+    capacity = self.network_structure.m_graph[src_dpid][dst_dpid]['bw']
+  File "/home/terry/.local/lib/python3.6/site-packages/networkx/classes/coreviews.py", line 51, in __getitem__
+    return self._atlas[key]
+KeyError: 2
+
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000001        1        0        0        0 20887657 1987554468        0
+0000000000000001        2 93489451 7375153330        0 89218655 7071518089        0
+0000000000000001        3 89218665 7071519031        0 93489441 7375152388        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000003        1        0        0        0 20981396 1989243484        0
+0000000000000003        2 93489441 7375152388        0 89218665 7071519031        0
+0000000000000003        3 89218661 7071518620        0 93489445 7375152799        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+datapath         port     rx-pkts  rx-bytes rx-error tx-pkts  tx-bytes tx-error
+---------------- -------- -------- -------- -------- -------- -------- --------
+0000000000000002        1        0        0        0 20734452 1984797887        0
+0000000000000002        2 89218655 7071518089        0 93489451 7375153330        0
+0000000000000002        3 93489445 7375152799        0 89218661 7071518620        0
+datapath         in-port  eth-dst           out-port packets  bytes
+---------------- -------- ----------------- -------- -------- --------
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(3, 2), (3, 1), (2, 1)]
+discovery--->=============================================================================
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='6a:e1:41:2d:65:1f',name=b'ap2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='6a:e1:41:2d:65:1f',name=b'ap2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='6a:53:7e:08:bd:83',name=b'ap1-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='6a:53:7e:08:bd:83',name=b'ap1-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='d6:0e:a1:7f:a0:dc',name=b'ap1-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='36:e0:c4:a5:87:7a',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='92:12:19:7a:7e:ae',name=b'ap3-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='4a:1f:9c:a2:74:73',name=b'ap2-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+monitor---> unreigster datapath: 1000000000000001
+monitor---> unreigster datapath: 1000000000000003
+monitor---> unreigster datapath: 1000000000000002
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery---> AccessPoint: 4 connected
+discovery---> AccessPoint: 5 connected
+discovery---> AccessPoint: 6 connected
+discovery---> AccessPoint: 7 connected
+discovery---> AccessPoint: 8 connected
+monitor---->register datapath: 1000000000000001
+monitor---->register datapath: 1000000000000004
+discovery---> AccessPoint: 9 connected
+monitor---->register datapath: 1000000000000003
+monitor---->register datapath: 1000000000000006
+monitor---->register datapath: 1000000000000005
+monitor---->register datapath: 1000000000000002
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='ae:c5:63:ca:80:72',name=b'ap6-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='f6:e9:46:de:8f:4d',name=b'ap5-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='de:43:df:70:60:fc',name=b'ap3-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='3a:1b:83:55:5b:a4',name=b'ap4-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='12:8d:f8:d1:e4:8a',name=b'ap2-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='be:4a:db:3e:a9:fa',name=b'ap4-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='ee:03:4c:93:ea:32',name=b'ap1-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='6e:81:39:d2:06:5c',name=b'ap5-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='ce:17:eb:a4:21:d3',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=3,hw_addr='8e:03:50:de:db:ce',name=b'ap2-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(4, 8), (4, 7), (8, 5), (7, 9), (6, 9)]
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(4, 8), (4, 7), (8, 5), (7, 9), (6, 9)]
+discovery--->=============================================================================
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='ee:03:4c:93:ea:32',name=b'ap1-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='ee:03:4c:93:ea:32',name=b'ap1-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=MODIFY desc=OFPPort(port_no=2,hw_addr='12:8d:f8:d1:e4:8a',name=b'ap2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='12:8d:f8:d1:e4:8a',name=b'ap2-eth2',config=0,state=0,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='8e:03:50:de:db:ce',name=b'ap2-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='ce:17:eb:a4:21:d3',name=b'ap3-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='3a:1b:83:55:5b:a4',name=b'ap4-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='de:43:df:70:60:fc',name=b'ap3-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='be:4a:db:3e:a9:fa',name=b'ap4-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='f6:e9:46:de:8f:4d',name=b'ap5-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+discovery--->==================================== discovery ====================================
+discovery---> cls: [(8, 5)]
+discovery--->=============================================================================
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=2,hw_addr='ae:c5:63:ca:80:72',name=b'ap6-eth2',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+---> OFPPortStatus received: reason=DELETE desc=OFPPort(port_no=3,hw_addr='6e:81:39:d2:06:5c',name=b'ap5-eth3',config=0,state=4,curr=2112,advertised=0,supported=0,peer=0,curr_speed=10000000,max_speed=0)
+monitor---> unreigster datapath: 1000000000000004
+monitor---> unreigster datapath: 1000000000000001
+monitor---> unreigster datapath: 1000000000000006
+monitor---> unreigster datapath: 1000000000000003
+monitor---> unreigster datapath: 1000000000000005
+monitor---> unreigster datapath: 1000000000000002
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
+discovery--->==================================== discovery ====================================
+discovery---> cls: []
+discovery--->=============================================================================
